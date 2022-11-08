@@ -405,6 +405,12 @@
       "projectFolder": "packages/styles",
       "shouldPublish": true,
       "versionPolicyName": "individual"
+    },
+    {
+      "packageName": "@ordinly/api-abstraction",
+      "projectFolder": "packages/api-abstraction",
+      "shouldPublish": true,
+      "versionPolicyName": "individual"
     }
   ]
 }

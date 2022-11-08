@@ -1,0 +1,21 @@
+{
+  "name": "@ordinly/api-abstraction",
+  "version": "0.0.1",
+  "description": "The TS API abstraction for communicating with the Ordinly backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ordinly/ordinly.git"
+  },
+  "author": "Sean MacKay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ordinly/ordinly/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

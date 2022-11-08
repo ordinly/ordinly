@@ -8,8 +8,17 @@
       "name": "rush-common",
       "version": "0.0.0",
       "dependencies": {
+        "@rush-temp/api-abstraction": "file:./projects/api-abstraction.tgz",
         "@rush-temp/styles": "file:./projects/styles.tgz",
         "shx": "^0.3.4",
+        "typescript": "^4.8.4"
+      }
+    },
+    "node_modules/@rush-temp/api-abstraction": {
+      "version": "0.0.0",
+      "resolved": "file:projects/api-abstraction.tgz",
+      "integrity": "sha512-L8T57qnLpMjvhFU9DHbJqqXFUEbM9hyJwOmixNWCw4tOwjF1YtNY846yxp7t68FhydwonZEjW+jOvTJ+0t+99g==",
+      "dependencies": {
         "typescript": "^4.8.4"
       }
     },
@@ -242,6 +251,13 @@
     }
   },
   "dependencies": {
+    "@rush-temp/api-abstraction": {
+      "version": "file:projects\\api-abstraction.tgz",
+      "integrity": "sha512-L8T57qnLpMjvhFU9DHbJqqXFUEbM9hyJwOmixNWCw4tOwjF1YtNY846yxp7t68FhydwonZEjW+jOvTJ+0t+99g==",
+      "requires": {
+        "typescript": "^4.8.4"
+      }
+    },
     "@rush-temp/styles": {
       "version": "file:projects\\styles.tgz",
       "integrity": "sha512-55H3ZWwcbSBjavaYmUD5aSo+khrcc8l/A3+3Lvh1aLTJWYmOSUmI+rindDJJuc1R9mLgQ/7mhzEhPY5ktpoOXA==",
