@@ -1,0 +1,17 @@
+{
+  "name": "@ordinly/styles",
+  "version": "0.0.1",
+  "description": "The common style-tokens and style-sheets for Ordinly",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run copy-files",
+    "copy-files": "shx cp -r ./src/css/ ./dist/"
+  },
+  "author": "Sean MacKay",
+  "license": "ISC",
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^4.8.4"
+  },
+  "repository": "https://github.com/ordinly/ordinly"
+}

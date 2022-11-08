@@ -1,0 +1,75 @@
+:root {
+  /* BODY */
+  --background-color: #ffffff;
+  --background-color-dark: #dbdbdb;
+  --background-color-light: white;
+  --background-color-black: #484848;
+  --shadow-color: #f3f3f3;
+
+  /* NEUTRAL */
+  --neutral-color: #393939;
+  --neutral-color-light: #535353;
+  --neutral-color-dark: #2b2b2b;
+  --neutral-color-disabled: #39393950;
+
+  /* PRIMARY */
+  --primary-color: #022140;
+  --primary-color-light: #033b74;
+  --primary-color-dark: #011222;
+  --primary-color-disabled: #02214050;
+
+  /* TEXT */
+  --primary-text-color: #393939;
+  --secondary-text-color: #f5f5f5;
+  --subtitle-text-color: #6e6e6e;
+
+  /* ERROR */
+  --error-dark: #d12828;
+  --error-light: #ff7875;
+  --error-regular: #ff4d4f;
+
+  /* WARNING */
+  --warning-dark: #dbb118;
+  --warning-light: #f0ce53;
+  --warning-regular: #ffd025;
+
+  /* SUCCESS */
+  --success-dark: #24a148;
+  --success-light: #4dd674;
+  --success-regular: #2fca5b;
+
+  /* Info */
+  --info-dark: #0043ce;
+  --info-light: #1d68ff;
+  --info-regular: #0050f0;
+
+  /* Priorities */
+  --critical-priority-color: #d12828;
+  --critical-priority-color-background: #d1282830;
+  --high-priority-color: #dbb118;
+  --high-priority-color-background: #dbb11830;
+  --medium-priority-color: #24a148;
+  --medium-priority-color-background: #24a14830;
+  --low-priority-color: #0043ce;
+  --low-priority-color-background: #0043ce30;
+
+  /* Statuses */
+  --proposal-status-color: #934df6;
+  --proposal-status-color-background: #934df630;
+  --not-started-status-color: #393939;
+  --not-started-status-color-background: #39393930;
+  --on-hold-status-color: #d42828;
+  --on-hold-status-color-background: #d4282830;
+  --in-progress-status-color: #0050f0;
+  --in-progress-status-color-background: #0050f030;
+  --complete-status-color: #088a3c;
+  --complete-status-color-background: #088a3c30;
+  --cancelled-status-color: #941349;
+  --cancelled-status-color-background: #94134930;
+  --rejected-status-color: #750606;
+  --rejected-status-color-background: #75060630;
+  --pending-status-color: #dbb118;
+  --pending-status-color-background: #dbb11830;
+  --active-status-color: #088a3c;
+  --active-status-color-background: #088a3c30;
+}
