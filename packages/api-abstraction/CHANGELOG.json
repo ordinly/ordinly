@@ -1,0 +1,17 @@
+{
+  "name": "@ordinly/api-abstraction",
+  "entries": [
+    {
+      "version": "0.0.2",
+      "tag": "@ordinly/api-abstraction_v0.0.2",
+      "date": "Tue, 08 Nov 2022 06:21:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add api-abstraction package"
+          }
+        ]
+      }
+    }
+  ]
+}
