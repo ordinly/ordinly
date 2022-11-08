@@ -402,7 +402,8 @@
     // },
     {
       "packageName": "@ordinly/styles",
-      "projectFolder": "packages/styles"
+      "projectFolder": "packages/styles",
+      "shouldPublish": true
     }
   ]
 }
