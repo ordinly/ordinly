@@ -1,0 +1,29 @@
+{
+  "name": "@ordinly/styles",
+  "entries": [
+    {
+      "version": "0.0.3",
+      "tag": "@ordinly/styles_v0.0.3",
+      "date": "Tue, 08 Nov 2022 05:24:00 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update package info"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.0.2",
+      "tag": "@ordinly/styles_v0.0.2",
+      "date": "Tue, 08 Nov 2022 05:13:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Init package"
+          }
+        ]
+      }
+    }
+  ]
+}
