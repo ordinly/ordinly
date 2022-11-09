@@ -1,0 +1,15 @@
+.container {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.sectionTitle {
+  font: var(--p-text);
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.noItems {
+  text-align: center;
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}

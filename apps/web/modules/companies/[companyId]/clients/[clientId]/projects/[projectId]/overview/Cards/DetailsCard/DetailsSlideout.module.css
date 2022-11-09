@@ -1,0 +1,15 @@
+.dangerZoneSubtitle {
+  color: var(--error-dark);
+}
+
+.dangerZoneWrapper {
+  overflow: hidden;
+}
+
+.dangerZoneWrapper > button {
+  margin: 0 0 var(--small-padding);
+}
+
+.dangerZoneWrapper button:last-of-type {
+  margin: 0;
+}

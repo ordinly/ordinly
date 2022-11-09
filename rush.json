@@ -413,9 +413,8 @@
       "versionPolicyName": "individual"
     },
     {
-      "packageName": "@ordinly/components",
-      "projectFolder": "packages/components",
-      "shouldPublish": true,
+      "packageName": "@ordinly/web",
+      "projectFolder": "apps/web",
       "versionPolicyName": "individual"
     }
   ]

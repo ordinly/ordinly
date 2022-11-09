@@ -1,0 +1,36 @@
+.table {
+  margin: var(--small-padding) 0 0 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.titleCell {
+  text-align: center;
+  word-wrap: break-word;
+  padding: var(--extra-small-padding) 0;
+  border: 1px solid var(--background-color-dark);
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: normal;
+}
+
+.cell {
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+  min-width: 70px;
+  max-width: 70px;
+  padding: var(--extra-small-padding) 0;
+  border: 1px solid var(--background-color-dark);
+}
+
+.row:hover {
+  background-color: var(--background-color-light);
+}

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+}
+
+.container.sent {
+  justify-content: flex-end;
+}
+
+.message {
+  padding: var(--small-padding);
+  margin: 0 0 var(--small-padding);
+  border-radius: var(--border-radius-small);
+  max-width: 400px;
+}
+
+.message.sent {
+  background-color: var(--primary-color-disabled);
+  color: var(--background-color-light);
+  display: inline-block;
+}
+
+.message.recieved {
+  background-color: var(--background-color);
+  display: inline-block;
+}
+
+.name {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.text {
+  margin: 0;
+}

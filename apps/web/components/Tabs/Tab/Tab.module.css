@@ -1,0 +1,33 @@
+.tab {
+  display: flex;
+  text-align: start;
+  font: var(--h5-text);
+  padding: var(--small-padding);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 200px;
+  height: 100%;
+  border-bottom: 4px solid var(--background-color-dark);
+}
+
+.tab:last-child {
+  margin: 0;
+}
+
+.tab:hover {
+  background-color: var(--shadow-color);
+}
+
+.tab.active {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.tab.error {
+  color: var(--error-regular);
+  border-bottom: 4px solid var(--error-regular);
+}
+
+.icon {
+  margin: 0 var(--extra-small-padding) 0 0;
+}

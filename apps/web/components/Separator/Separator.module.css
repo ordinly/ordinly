@@ -1,0 +1,5 @@
+.separator {
+  margin: var(--large-padding) 0;
+  height: 2px;
+  background-color: var(--background-color-dark);
+}

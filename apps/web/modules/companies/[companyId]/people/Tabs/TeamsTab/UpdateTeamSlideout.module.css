@@ -1,0 +1,35 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 var(--small-padding) 0;
+  margin: 0 0 var(--small-padding) 0;
+  border-bottom: 1px solid var(--background-color-dark);
+  align-items: center;
+}
+
+.description {
+  margin: 0;
+  font-weight: bold;
+}
+
+.data {
+  margin: 0;
+}
+
+.modalText {
+  margin: 0 0 var(--small-padding);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.modalButtons button:first-of-type {
+  margin: 0 var(--small-padding) 0 0;
+}

@@ -1,0 +1,86 @@
+@keyframes ring-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ring {
+  --color: var(--primary-color);
+  --small-size: 20px;
+  --medium-size: 40px;
+  --large-size: 80px;
+  --extra-large-size: 100px;
+  --speed: 1.2s;
+  --delta: -0.125;
+
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+}
+
+.small {
+  width: var(--small-size);
+  height: var(--small-size);
+}
+
+.medium {
+  width: var(--medium-size);
+  height: var(--medium-size);
+}
+
+.large {
+  width: var(--large-size);
+  height: var(--large-size);
+}
+
+.extra-large {
+  width: var(--extra-large-size);
+  height: var(--extra-large-size);
+}
+
+.inner {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: ring-animation var(--speed) cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.inner:nth-child(1) {
+  animation-delay: calc(var(--delta) * 3 * var(--speed));
+  border-color: var(--color) transparent transparent transparent;
+}
+
+.inner:nth-child(2) {
+  animation-delay: calc(var(--delta) * 2 * var(--speed));
+  border-color: var(--color) transparent transparent transparent;
+}
+
+.inner:nth-child(3) {
+  animation-delay: calc(var(--delta) * 1 * var(--speed));
+  border-color: var(--color) transparent transparent transparent;
+}
+
+.inner.small {
+  margin: calc(var(--small-size) * 0.1);
+  border-width: calc(var(--small-size) * 0.125);
+}
+
+.inner.medium {
+  margin: calc(var(--medium-size) * 0.1);
+  border-width: calc(var(--medium-size) * 0.125);
+}
+
+.inner.large {
+  margin: calc(var(--large-size) * 0.1);
+  border-width: calc(var(--large-size) * 0.125);
+}
+
+.inner.extra-large {
+  margin: calc(var(--extra-large-size) * 0.1);
+  border-width: calc(var(--extra-large-size) * 0.125);
+}

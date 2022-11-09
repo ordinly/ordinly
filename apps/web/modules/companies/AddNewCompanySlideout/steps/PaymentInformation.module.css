@@ -1,0 +1,29 @@
+.pricingContainer {
+  display: flex;
+  flex-direction: column;
+  margin: var(--medium-padding) 0 var(--small-padding) 0;
+}
+
+.price {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.perWorker {
+  font: var(--h3-text);
+  margin: 0;
+  color: var(--subtitle-text-color);
+}
+
+.check {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.feature {
+  margin: 0 0 0 var(--small-padding);
+}
+
+.description {
+  margin: var(--medium-padding) 0;
+}

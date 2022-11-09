@@ -1,0 +1,28 @@
+.noItems {
+  margin: 0 0 var(--small-padding) 0;
+  padding: var(--small-padding);
+  color: var(--primary-text-color);
+  font: var(--p-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-dark);
+}
+
+.formFieldContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  align-items: center;
+  margin: 0 0 var(--extra-small-padding);
+}
+
+.sectionTitle {
+  font: var(--p-text);
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.addItemContainer {
+  display: flex;
+  justify-content: flex-end;
+}

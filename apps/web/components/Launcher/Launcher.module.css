@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  bottom: var(--medium-padding);
+  right: var(--medium-padding);
+  z-index: 2;
+}
+
+.button {
+  height: 70px;
+  width: 70px;
+  font-size: 32px;
+  color: var(--background-color-light);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--background-color-light);
+  transition: transform 0.25s;
+}
+
+.rotated {
+  transform: rotate(-180deg);
+}

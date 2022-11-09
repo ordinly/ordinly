@@ -1,0 +1,32 @@
+.sectionTitle {
+  font: var(--p-text);
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.noItems {
+  text-align: center;
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}
+
+.itemContainer {
+  display: flex;
+  gap: var(--small-padding);
+  align-items: center;
+  margin: 0 0 var(--small-padding);
+}
+
+.buttonContainer {
+  width: 50%;
+}
+
+.separator {
+  margin: var(--large-padding) 0;
+  height: 4px;
+  background-color: var(--background-color-dark);
+}
+
+.label {
+  margin: 0 0 var(--small-padding) 0;
+}

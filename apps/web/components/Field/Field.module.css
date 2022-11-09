@@ -1,0 +1,33 @@
+.container {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.container.inline {
+  margin: 0;
+}
+
+.title {
+  font: var(--small-text);
+  margin: 0 0 4px 0;
+}
+
+.error {
+  margin: 4px 0 0 0;
+  font: var(--small-text);
+  color: var(--error-dark);
+}
+
+.helper {
+  font: var(--small-text);
+  color: var(--background-color-dark);
+  margin: 4px 0 0 8px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.required {
+  color: var(--error-regular);
+}

@@ -1,0 +1,20 @@
+.container {
+  position: relative;
+}
+
+.tile {
+  position: relative;
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  padding: var(--small-padding);
+  cursor: pointer;
+  min-height: 168px;
+  height: 100%;
+  transition: box-shadow 0.15s linear;
+  will-change: transform;
+  border: 2px solid #dbdbdb;
+}
+
+.tile:hover {
+  background-color: #eeeeee;
+}

@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  border: 0;
+  border-bottom: 2px solid var(--primary-text-color);
+  outline: none;
+  position: relative;
+  font: var(--p-text);
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+  padding: var(--extra-small-padding) var(--extra-small-padding)
+    var(--extra-small-padding) 0;
+  width: 100%;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.input:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.button {
+  position: absolute;
+  right: 32px;
+  top: calc(50% - 12px);
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-color);
+  padding: 4px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.button:hover {
+  background-color: var(--background-color);
+}
+
+.icon {
+  position: absolute;
+  right: var(--small-padding);
+  top: calc(50% - 12px);
+  cursor: text;
+}
+
+/* =======================================================
+ * ERROR
+ * =======================================================
+*/
+
+.input.error:not(:focus) {
+  border-bottom: 2px solid var(--error-regular);
+}
+
+.readOnly {
+  border: 0;
+  cursor: text;
+}
+
+.readOnly:disabled {
+  cursor: text;
+}

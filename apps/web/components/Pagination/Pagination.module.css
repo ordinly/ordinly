@@ -1,0 +1,80 @@
+.container {
+  margin: 0 auto;
+}
+
+.pagesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  min-width: 120px;
+  gap: var(--extra-small-padding);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 var(--extra-small-padding);
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.button:hover:not([disabled]) {
+  color: var(--primary-color-light);
+}
+
+.button[disabled] {
+  color: var(--background-color-dark);
+  cursor: not-allowed;
+}
+
+.pageNumbers {
+  display: flex;
+  flex-direction: row;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.pageNumber {
+  margin: 0;
+}
+
+.pageNumber.current {
+  font-weight: bold;
+}
+
+.pageNumber:not(.current) {
+  cursor: pointer;
+}
+
+.settingsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.info {
+  margin: 0;
+  width: 250px;
+}

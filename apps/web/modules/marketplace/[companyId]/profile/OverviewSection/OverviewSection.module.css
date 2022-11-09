@@ -1,0 +1,66 @@
+.contentContainer {
+  background-color: var(--background-color-light);
+  padding: var(--small-padding) var(--small-padding) 0 var(--small-padding);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0px 2px 8px 8px var(--shadow-color);
+  width: 100%;
+  margin: var(--medium-padding) 0 0 0;
+}
+
+.infoSection {
+  margin: 0 0 var(--medium-padding) 0;
+}
+
+.main {
+  padding: 0 0 0 var(--large-padding);
+  display: flex;
+  flex-direction: row;
+}
+
+.profileSection {
+  position: relative;
+}
+
+.profilePicture {
+  padding: var(--extra-small-padding);
+  background-color: var(--background-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-medium);
+}
+
+.profileActions {
+  padding: var(--extra-small-padding);
+  min-width: 175px;
+}
+
+.action {
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.info {
+  margin: var(--small-padding) 0 0 0;
+  padding: 0 var(--small-padding);
+  width: 100%;
+}
+
+.title {
+  font: var(--h2-text);
+  margin: 0;
+}
+
+.tagline {
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.rating {
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--extra-small-padding);
+}

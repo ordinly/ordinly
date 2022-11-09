@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  font: var(--h4-text);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.actions button:first-of-type {
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.image {
+  font-size: 1.75em;
+  background-color: var(--background-color-dark);
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}

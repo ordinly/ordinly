@@ -1,0 +1,106 @@
+.select {
+  border: 1px solid var(--primary-text-color);
+  outline: none;
+  position: relative;
+  font: var(--p-text);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.icon {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: var(--extra-small-padding);
+  font-size: 12px;
+  transition: all 0.15s;
+}
+
+.flipped {
+  transform: rotate(-180deg);
+}
+
+.close {
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.select.disabled:hover {
+  cursor: not-allowed;
+}
+
+.select:focus:not(.disabled) {
+  border: 2px solid var(--primary-color-light);
+  box-shadow: 0 0 2px 1px var(--primary-color-light);
+}
+
+.noItemsContainer {
+  padding: var(--extra-small-padding);
+  margin: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.noItemsText {
+  margin: 0 0 0 var(--small-padding);
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--background-color);
+  padding: var(--extra-small-padding);
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.removeTag {
+  margin: 0 0 0 var(--extra-small-padding);
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/* =======================================================
+ * SIZES
+ * =======================================================
+*/
+.small {
+  padding: var(--extra-small-padding) var(--medium-padding)
+    var(--extra-small-padding) var(--small-padding);
+  min-height: 36px;
+}
+
+.medium {
+  padding: var(--small-padding) var(--medium-padding) var(--small-padding)
+    var(--small-padding);
+}
+
+.large {
+  padding: calc(var(--large-padding) - 0.5rem) var(--medium-padding)
+    calc(var(--large-padding) - 0.5rem) var(--small-padding);
+}
+
+.clearable {
+  padding-right: var(--large-padding);
+}
+
+/* =======================================================
+ * ERROR
+ * =======================================================
+*/
+.error {
+  border: 2px solid var(--error-regular);
+}
+
+.error:focus {
+  border: 2px solid var(--error-regular);
+  box-shadow: 0 0 2px 1px var(--error-light);
+}

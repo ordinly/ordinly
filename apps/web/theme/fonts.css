@@ -1,0 +1,10 @@
+:root {
+  --title-text: 600 2rem Arial, sans-serif;
+  --h1-text: 600 1.8rem Arial, sans-serif;
+  --h2-text: 600 1.6rem Arial, sans-serif;
+  --h3-text: 600 1.4rem Arial, sans-serif;
+  --h4-text: 600 1.2rem Arial, sans-serif;
+  --h5-text: 600 1rem Arial, sans-serif;
+  --p-text: 1rem Arial, sans-serif;
+  --small-text: 0.85rem Arial, sans-serif;
+}

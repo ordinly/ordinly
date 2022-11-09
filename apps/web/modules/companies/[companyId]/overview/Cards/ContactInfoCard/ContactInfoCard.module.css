@@ -1,0 +1,28 @@
+.section {
+  margin: 0 0 var(--medium-padding) 0;
+}
+
+.section:last-of-type {
+  margin: 0;
+}
+
+.subtiitle {
+  margin: var(--extra-small-padding) 0;
+}
+
+.noData {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}
+
+.emailAddress {
+  padding: var(--extra-small-padding) 0;
+  border-bottom: 1px solid var(--background-color-dark);
+}
+
+.phoneNumber {
+  padding: var(--extra-small-padding) 0;
+  border-bottom: 1px solid var(--background-color-dark);
+}

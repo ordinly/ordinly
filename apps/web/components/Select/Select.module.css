@@ -1,0 +1,73 @@
+.select {
+  border: 0;
+  border-bottom: 2px solid var(--primary-text-color);
+  outline: none;
+  position: relative;
+  font: var(--p-text);
+  box-sizing: border-box;
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding: var(--extra-small-padding) var(--extra-small-padding)
+    var(--extra-small-padding) var(--extra-small-padding);
+}
+
+.icon {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: var(--extra-small-padding);
+  font-size: 8px;
+  transition: all 0.15s;
+}
+
+.flipped {
+  transform: rotate(-180deg);
+}
+
+.close {
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.select.disabled:hover {
+  cursor: not-allowed;
+}
+
+.select:focus:not(.disabled) {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.noItemsContainer {
+  padding: var(--extra-small-padding);
+  margin: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.noItemsText {
+  margin: 0 0 0 var(--small-padding);
+}
+
+/* =======================================================
+ * SIZES
+ * =======================================================
+*/
+
+.clearable {
+  padding-right: var(--large-padding);
+}
+
+/* =======================================================
+ * ERROR
+ * =======================================================
+*/
+.error {
+  border-bottom: 1px solid var(--error-regular);
+}

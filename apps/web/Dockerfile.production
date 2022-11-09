@@ -1,0 +1,19 @@
+FROM node:alpine
+
+ARG NPM_TOKEN 
+
+RUN mkdir /web
+
+WORKDIR /web
+
+COPY .npmrc .npmrc
+
+COPY package*.json ./
+
+RUN echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > /web/.npmrc && \
+    npm install && \
+    rm -f /app/.npmrc
+
+COPY . /web
+
+CMD npm run start

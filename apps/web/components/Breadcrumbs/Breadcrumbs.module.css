@@ -1,0 +1,90 @@
+.bradcrumbContainer {
+  max-width: calc(100vw - 32px);
+  overflow: auto;
+}
+
+.breadcrumbListContainer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.iconContainer {
+  margin: 0 var(--extra-small-padding) 0 0;
+  width: 16px;
+  font-size: 12px;
+}
+
+.breadcrumb {
+  position: relative;
+  background-color: var(--background-color-dark);
+  padding: 0px 17px 0px 13px;
+  border-radius: var(--border-radius-small);
+  transition: all 0.15s;
+  min-height: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font: var(--small-text);
+  color: black;
+}
+
+.single {
+  padding: 0px 20px;
+  border-radius: var(--border-radius-small);
+  background-color: var(--primary-color-light);
+  color: white;
+  clip-path: 0;
+}
+
+.first {
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 8px) 0%,
+    100% 50%,
+    calc(100% - 8px) 100%,
+    0% 100%
+  );
+}
+
+.breadcrumb.link {
+  cursor: pointer;
+}
+
+.breadcrumb.link:hover {
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.middle {
+  left: -4;
+  padding: 0px 20px;
+  border-radius: 0;
+  clip-path: polygon(
+    calc(100% - 8px) 0%,
+    100% 50%,
+    calc(100% - 8px) 100%,
+    0% 100%,
+    8px 50%,
+    0% 0%
+  );
+}
+
+.middle.link:hover {
+  margin: 0 8px;
+}
+
+.last {
+  padding: 0px 16px 0px 20px;
+  border-radius: 0 4px 4px 0;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 8px 50%, 0% 0%);
+  background-color: var(--primary-color-light);
+  color: white;
+}
+
+.last.link:hover {
+  margin: 0 0 0 8px;
+}

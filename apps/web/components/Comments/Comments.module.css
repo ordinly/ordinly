@@ -1,0 +1,6 @@
+.noItems {
+  text-align: center;
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}

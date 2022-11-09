@@ -1,0 +1,26 @@
+.chat {
+  padding: var(--medium-padding);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 400px);
+}
+
+.messages {
+  flex: 1;
+  background-color: var(--background-color-light);
+  width: 100%;
+  border-radius: var(--border-radius-medium);
+  margin: 0 0 var(--medium-padding) 0;
+  padding: var(--small-padding);
+  overflow: auto;
+}
+
+.newMessageContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  flex: 1;
+  margin: 0 var(--small-padding) 0 0;
+}

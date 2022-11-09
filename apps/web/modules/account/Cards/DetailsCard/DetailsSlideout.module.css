@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form {
+  flex: 1;
+  overflow: auto;
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.actions > * {
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.actions:last-child {
+  margin: 0;
+}
+
+.dangerZoneSubtitle {
+  color: var(--error-dark);
+}
+
+.dangerZoneWrapper {
+  overflow: hidden;
+}
+
+.dangerZoneWrapper > button {
+  margin: 0 0 var(--small-padding);
+}
+
+.dangerZoneWrapper button:last-of-type {
+  margin: 0;
+}

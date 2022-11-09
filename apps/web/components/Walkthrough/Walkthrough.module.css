@@ -1,0 +1,40 @@
+.window {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.menu {
+  padding: var(--small-padding);
+  min-width: 300px;
+}
+
+.text {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.backButton {
+  flex: 1;
+}
+
+.steps {
+  flex: 1;
+  text-align: center;
+}
+
+.nextButton {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}

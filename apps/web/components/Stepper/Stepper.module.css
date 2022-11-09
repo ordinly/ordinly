@@ -1,0 +1,53 @@
+.steps {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
+  background-color: transparent;
+}
+
+.step {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font: var(--h5-text);
+  padding: 0 var(--small-padding) var(--extra-small-padding)
+    var(--medium-padding);
+  background-color: transparent;
+  border: 0;
+  flex-grow: 1;
+  border-bottom: 4px solid var(--background-color-dark);
+}
+
+.step.active {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.step.done {
+  border-bottom: 4px solid var(--success-dark);
+}
+
+.number {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--background-color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background-color-light);
+  font-size: 0.75rem;
+  outline: 4px solid var(--background-color);
+}
+
+.number.active {
+  background-color: var(--primary-color);
+}
+
+.number.done {
+  background-color: var(--success-dark);
+}

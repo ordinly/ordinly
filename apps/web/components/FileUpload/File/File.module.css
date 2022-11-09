@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--extra-small-padding);
+  background-color: var(--background-color-light);
+  cursor: pointer;
+  margin: var(--extra-small-padding) 0 0 0;
+  border-radius: var(--border-radius-small);
+}
+
+.container:hover:not(button) {
+  color: var(--primary-color-disabled);
+}
+
+.name {
+  flex: 1;
+}

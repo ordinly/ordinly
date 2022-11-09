@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+}
+
+.textArea {
+  border: 0;
+  border-bottom: 2px solid var(--primary-text-color);
+  outline: none;
+  position: relative;
+  font: var(--p-text);
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 108px;
+  width: 100%;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: var(--extra-small-padding) 0;
+}
+
+.textArea:disabled {
+  cursor: not-allowed;
+}
+
+.textArea:focus {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* =======================================================
+ * ERROR
+ * =======================================================
+*/
+.error {
+  border-bottom: 2px solid var(--error-regular);
+}

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:hover {
+  color: var(--background-color-light);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.user {
+  border-radius: 50%;
+}
+
+.company {
+  border-radius: var(--border-radius-medium);
+}
+
+.extra-small {
+  width: 36px;
+  height: 36px;
+}
+
+.small {
+  width: 52px;
+  height: 52px;
+}
+
+.medium {
+  width: 68px;
+  height: 68px;
+}
+
+.large {
+  width: 132px;
+  height: 132px;
+}
+
+.input {
+  display: none;
+}

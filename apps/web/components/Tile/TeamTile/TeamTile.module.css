@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.contentContainer {
+  max-width: calc(100% - 76px);
+}
+
+.title {
+  margin: 0;
+  font: var(--h4-text);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: var(--extra-small-padding);
+}
+
+.tag {
+  padding: var(--extra-small-padding) var(--small-padding);
+  border-radius: var(--border-radius-small);
+}
+
+.tagNumber {
+  margin: 0 0 0 var(--extra-small-padding);
+}

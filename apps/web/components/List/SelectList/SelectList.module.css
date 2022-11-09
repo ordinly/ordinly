@@ -1,0 +1,26 @@
+.list {
+  padding: 0;
+}
+
+.noItems {
+  text-align: center;
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+}
+
+.error {
+  margin: 4px 0 0 0;
+  font: var(--p-text);
+  color: var(--error-dark);
+}

@@ -1,0 +1,38 @@
+.container {
+  display: inline-flex;
+  padding: var(--extra-small-padding);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius-small);
+}
+
+.input {
+  margin: 0;
+}
+
+.input :global(.public-DraftEditor-content) {
+  background-color: transparent;
+  border-radius: var(--border-radius-small);
+  padding: 0 var(--extra-small-padding);
+}
+
+.input.error :global(.public-DraftEditor-content) {
+  border: 1px solid var(--error-regular);
+}
+
+.input.active {
+  background-color: white;
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.remove {
+  background-color: var(--background-color-dark);
+  border: 0;
+  outline: none;
+  margin: 0;
+  display: inline-flex;
+  cursor: pointer;
+  border-radius: 50%;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}

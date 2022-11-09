@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  padding: 20px;
+}
+
+.rail {
+  width: 100%;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.handle {
+  top: calc(-50% + -4px);
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 0);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  border: 6px solid var(--primary-color);
+}
+
+.handle:hover {
+  box-shadow: 0px 2px 8px 8px var(--shadow-color);
+}
+
+.handle.active {
+  box-shadow: 0px 2px 8px 8px var(--shadow-color);
+}
+
+.value {
+  margin: var(--small-padding) 0 0 0;
+}

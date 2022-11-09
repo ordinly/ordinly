@@ -1,0 +1,24 @@
+.item {
+  flex: 1;
+  list-style-type: none;
+  margin: 0;
+  color: var(--secondary-text-color);
+  font: var(--h5-text);
+  cursor: pointer;
+  position: relative;
+  padding: var(--small-padding) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item.active {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.title {
+  margin: var(--small-padding) 0 0 0;
+  text-align: center;
+}

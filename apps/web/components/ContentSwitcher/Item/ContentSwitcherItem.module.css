@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font: var(--p-text);
+  padding: var(--extra-small-padding);
+  background-color: transparent;
+  border-radius: var(--border-radius-medium);
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.large {
+  font: var(--h4-text);
+  padding: var(--small-padding);
+}
+
+.item:hover {
+  background-color: var(--shadow-color);
+}
+
+.item.active {
+  background-color: var(--primary-color);
+  color: var(--background-color-light);
+}
+
+.icon {
+  margin: 0 var(--extra-small-padding) 0 0;
+}

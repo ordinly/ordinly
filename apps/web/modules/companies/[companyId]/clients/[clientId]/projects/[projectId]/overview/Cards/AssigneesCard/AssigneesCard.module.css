@@ -1,0 +1,127 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dashed var(--background-color-dark);
+  margin: 0 0 var(--extra-small-padding) 0;
+  padding: 0 0 var(--extra-small-padding) 0;
+}
+
+.text {
+  margin: 0;
+}
+
+.workerIcon {
+  border-radius: 50%;
+  background-color: var(--background-color);
+  padding: var(--extra-small-padding);
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.bold {
+  font-weight: bold;
+  width: 150px;
+}
+
+.section {
+  margin: 0 0 var(--medium-padding) 0;
+}
+
+.section:last-of-type {
+  margin: 0;
+}
+
+.subtiitle {
+  margin: var(--extra-small-padding) 0;
+}
+
+.noData {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}
+
+.assignee {
+  padding: var(--extra-small-padding) 0;
+  border-bottom: 1px solid var(--background-color-dark);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.fieldContainer {
+  padding: var(--extra-small-padding);
+}
+
+.sectionTitle {
+  font: var(--p-text);
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  align-items: center;
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.titles.multi {
+  margin: 0 48px var(--extra-small-padding) 0;
+}
+
+.nameTitle {
+  flex: 1;
+  margin: 0;
+}
+
+.emailTitle {
+  flex: 1.5;
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small-padding);
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0px 1px 4px 4px var(--shadow-color);
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  align-items: center;
+}
+
+.nameField {
+  flex: 1;
+  margin: 0;
+}
+
+.emailField {
+  flex: 1.5;
+  margin: 0;
+}
+
+.button {
+  align-self: flex-end;
+}

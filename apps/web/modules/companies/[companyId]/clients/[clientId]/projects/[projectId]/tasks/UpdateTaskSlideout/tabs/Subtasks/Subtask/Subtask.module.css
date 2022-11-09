@@ -1,0 +1,47 @@
+.tileContainer {
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+  margin: 0 0 var(--small-padding) 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkboxField {
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.nameField {
+  flex: 1;
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.caret {
+  font-size: 10px;
+  transition: all 0.25s;
+}
+
+.caret.open {
+  transform: rotate(-180deg);
+}
+
+.bottomContainer {
+  height: 0;
+  overflow: hidden;
+}
+
+.bottomContainer.open {
+  height: auto;
+  margin: var(--extra-small-padding) 0 0 0;
+}
+
+.button {
+  float: right;
+  width: 50%;
+}

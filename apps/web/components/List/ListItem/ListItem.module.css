@@ -1,0 +1,18 @@
+.item {
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  padding: var(--extra-small-padding);
+  margin: 0;
+  padding: var(--extra-small-padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.text {
+  padding: 0 var(--extra-small-padding);
+  flex: 1;
+  margin: 0;
+}

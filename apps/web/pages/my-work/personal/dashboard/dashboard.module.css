@@ -1,0 +1,14 @@
+.header {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.modalCompanyName {
+  font-weight: bold;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: var(--small-padding) 0 0 0;
+}

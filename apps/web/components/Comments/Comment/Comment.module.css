@@ -1,0 +1,21 @@
+.container {
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-small);
+  padding: var(--extra-small-padding);
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.user {
+  margin: 0 0 var(--extra-small-padding) 0;
+  font: var(--h5-text);
+}
+
+.date {
+  margin: 0 0 var(--extra-small-padding) 0;
+  font: var(--small-text);
+  color: var(--background-color-dark);
+}
+
+.text {
+  margin: 0 0 var(--extra-small-padding) 0;
+}

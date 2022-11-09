@@ -1,0 +1,42 @@
+.contentContainer {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  background-color: var(--background-color);
+  overflow: auto;
+}
+
+.main > div:first-child {
+  transform: translate(0px, 90px);
+  opacity: 0;
+  animation-name: slide;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0px, 90px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contentContainer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+}

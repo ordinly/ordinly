@@ -1,0 +1,13 @@
+.footerContainer {
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 3;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}

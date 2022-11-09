@@ -1,0 +1,7 @@
+.modalText {
+  margin: 0 0 var(--small-padding);
+}
+
+.bold {
+  font-weight: bold;
+}

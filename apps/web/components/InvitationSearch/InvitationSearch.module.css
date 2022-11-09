@@ -1,0 +1,43 @@
+.selectedContainer {
+  overflow: hidden;
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.container {
+  border-radius: var(--border-radius-medium);
+  background-color: var(--background-color-light);
+  margin: 0 0 var(--extra-small-padding) 0;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--extra-small-padding);
+}
+
+.name {
+  flex: 1;
+  margin: 0 0 0 var(--small-padding);
+}
+
+.checkbox {
+}
+
+.noItemsContainer {
+  padding: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-dark);
+}
+
+.inputContainer {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.separator {
+  margin: var(--small-padding) 0 0 0;
+}

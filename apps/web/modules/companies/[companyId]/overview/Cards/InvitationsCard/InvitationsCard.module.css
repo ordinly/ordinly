@@ -1,0 +1,22 @@
+.container {
+  grid-column: 2;
+}
+
+@media only screen and (max-width: 1138px) {
+  .container {
+    grid-column: span 2;
+  }
+}
+
+.noItemsContainer {
+  padding: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-dark);
+}
+
+.noItemsText {
+  margin-left: var(--small-padding);
+}

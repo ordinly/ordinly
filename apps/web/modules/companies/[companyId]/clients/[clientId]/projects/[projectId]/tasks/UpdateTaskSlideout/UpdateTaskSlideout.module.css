@@ -1,0 +1,30 @@
+.content {
+  margin: var(--medium-padding) 0 0 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.input {
+  flex: 1;
+  margin: 0 var(--extra-small-padding) 0 0;
+}
+
+.noItems {
+  text-align: center;
+  background-color: var(--background-color-light);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}

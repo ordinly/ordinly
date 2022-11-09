@@ -1,0 +1,20 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dashed var(--background-color-dark);
+  margin: 0 0 var(--extra-small-padding) 0;
+  padding: 0 0 var(--extra-small-padding) 0;
+}
+
+.info > .text:first-child {
+  min-width: 150px;
+}
+
+.text {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+  width: 150px;
+}

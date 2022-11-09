@@ -1,0 +1,26 @@
+# Install neccessary global deps
+FROM node:16.14-alpine AS global
+
+RUN npm install -g next
+
+# Install package deps
+FROM global AS deps
+
+WORKDIR /web
+
+ARG NPM_TOKEN
+
+COPY .npmrc ./.npmrc
+
+COPY package*.json ./
+
+RUN npm install
+
+RUN rm -f .npmrc
+
+# Run the app
+FROM deps AS run
+
+COPY . ./
+
+CMD npm run dev

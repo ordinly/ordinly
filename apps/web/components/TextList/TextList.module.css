@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  width: 100%;
+}
+
+.entries {
+  margin: var(--small-padding) 0 0 0;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  width: 100%;
+  padding: var(--small-padding);
+  margin: 0 0 var(--extra-small-padding) 0;
+  background-color: var(--background-color-light);
+  align-items: center;
+  border-radius: var(--border-radius-small);
+}
+
+.text {
+  margin: 0;
+  flex: 1;
+  font-weight: bold;
+}

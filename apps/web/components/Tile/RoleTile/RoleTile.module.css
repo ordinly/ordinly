@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.contentContainer {
+  max-width: calc(100% - 76px);
+}
+
+.title {
+  margin: 0;
+  font: var(--h4-text);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

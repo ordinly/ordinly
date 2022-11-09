@@ -1,0 +1,6 @@
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  gap: var(--small-padding);
+}

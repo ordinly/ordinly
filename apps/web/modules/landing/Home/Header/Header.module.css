@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: var(--small-padding);
+}
+
+.title {
+  margin: 0 var(--medium-padding) 0 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  padding: 0 var(--small-padding) var(--extra-small-padding)
+    var(--small-padding);
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 3px solid var(--primary-color);
+}

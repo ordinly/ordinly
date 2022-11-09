@@ -1,0 +1,29 @@
+.actionsContainer {
+  background-color: var(--background-color-light);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 var(--small-padding);
+  padding: var(--small-padding);
+  border-radius: var(--border-radius-medium);
+}
+
+.filtersContainer {
+  flex: 1;
+  margin: 0 var(--small-padding) 0 0;
+  display: inline-block;
+}
+
+.searchContainer {
+  width: 100%;
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.filterButtonContainers {
+  display: flex;
+  align-items: flex-start;
+}
+
+.filterButtonContainers > * {
+  margin: 0 var(--extra-small-padding) 0 0;
+}

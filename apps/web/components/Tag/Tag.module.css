@@ -1,0 +1,7 @@
+.tag {
+  margin: 0 var(--extra-small-padding) 0 0;
+  display: inline-block;
+  padding: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  background-color: var(--background-color);
+}

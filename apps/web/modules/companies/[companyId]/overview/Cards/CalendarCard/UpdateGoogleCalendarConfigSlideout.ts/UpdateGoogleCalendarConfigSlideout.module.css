@@ -1,0 +1,15 @@
+.toggleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 var(--small-padding) 0;
+  gap: var(--extra-small-padding);
+}
+
+.toggleContainer > label:first-child {
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.toggleLabel {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+}
+
+.column {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 0 var(--medium-padding) 0;
+}

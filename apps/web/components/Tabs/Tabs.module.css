@@ -1,0 +1,9 @@
+.tabs {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
+  background-color: transparent;
+  overflow: hidden;
+}

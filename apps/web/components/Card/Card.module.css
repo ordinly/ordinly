@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  padding: var(--small-padding);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--background-color-dark);
+  margin: 0 0 var(--extra-small-padding) 0;
+  padding: 0 0 var(--extra-small-padding) 0;
+}
+
+.title {
+  margin: 0;
+}

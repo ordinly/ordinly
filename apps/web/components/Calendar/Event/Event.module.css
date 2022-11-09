@@ -1,0 +1,20 @@
+.event {
+  margin: 0 0 4px 0;
+  font: var(--p-text);
+  font-size: 0.75rem;
+  background-color: rgb(143, 194, 143);
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.event::before {
+  content: "";
+  display: inline-block;
+}
+
+.dragging {
+  opacity: 0.5;
+}

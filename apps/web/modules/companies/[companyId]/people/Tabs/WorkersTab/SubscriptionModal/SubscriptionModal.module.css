@@ -1,0 +1,12 @@
+.modalText {
+  margin: 0 0 var(--small-padding);
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.modalButtons button:first-of-type {
+  margin: 0 var(--small-padding) 0 0;
+}

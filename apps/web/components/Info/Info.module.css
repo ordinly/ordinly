@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--medium-padding);
+}
+
+.text {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+  min-width: 150px;
+  font-size: 0.85em;
+}

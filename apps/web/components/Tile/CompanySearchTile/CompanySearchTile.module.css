@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  margin: 0 0 var(--medium-padding) 0;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  padding: var(--small-padding);
+  cursor: pointer;
+  box-shadow: 0px 2px 8px 8px var(--shadow-color);
+  transition: all 0.15s linear;
+  will-change: transform;
+  top: 0;
+  gap: var(--small-padding);
+}
+
+.tile:hover {
+  box-shadow: 0px 6px 12px 12px var(--shadow-color);
+  top: -4px;
+}
+
+.profilePicture {
+  width: 128px;
+  height: 128px;
+  border-radius: var(--border-radius-medium);
+  background-color: lightgrey;
+}
+
+.info {
+  flex: 1;
+}
+
+.title {
+  font: var(--h3-text);
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.ratingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--extra-small-padding);
+}
+
+.rating {
+  margin: 0;
+  font: var(--h5-text);
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--extra-small-padding);
+}

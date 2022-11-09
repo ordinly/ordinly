@@ -1,0 +1,78 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-color: transparent;
+  transition: all 0.25s;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 4;
+}
+
+.background.open {
+  pointer-events: all;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slideout {
+  width: 500px;
+  max-width: 100vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  left: auto;
+  background-color: var(--background-color);
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 0;
+  padding: var(--small-padding);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary-text-color);
+  margin: 0 0 var(--small-padding) 0;
+  padding: 0 0 var(--small-padding) 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.saving {
+  font: var(--p-text);
+  color: var(--background-color-dark);
+}
+
+.tabsContainer {
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.content {
+  overflow: auto;
+  margin: var(--small-padding) 0 0 0;
+}
+
+.fullHeight {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-direction: row;
+  margin: var(--small-padding) 0 0 0;
+}
+
+.actionsContainer > button {
+  margin: 0 0 0 var(--extra-small-padding);
+}
+
+.actionsContainer > button:first-child {
+  margin: 0;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: auto minmax(300px, auto);
+}
+
+@media only screen and (max-width: 1138px) {
+  .tile:nth-child(1) {
+    grid-column: auto / span 4;
+    grid-row: span 1;
+  }
+
+  .tile:nth-child(2) {
+    grid-column: auto / span 4;
+    grid-row: span 1;
+  }
+
+  .tile:nth-child(3) {
+    grid-column: auto / span 4;
+    grid-row: span 1;
+  }
+}

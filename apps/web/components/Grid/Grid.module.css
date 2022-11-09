@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: auto;
+  margin: 0;
+  grid-gap: var(--extra-small-padding);
+}
+
+.noItemsContainer {
+  height: 147px;
+  border-radius: var(--border-radius-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--h3-text);
+}
+
+@media only screen and (max-width: 999px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: var(--tiny-padding);
+  }
+}

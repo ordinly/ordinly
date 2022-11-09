@@ -1,0 +1,30 @@
+.modalText {
+  margin: 0 0 var(--small-padding);
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.modalButtons button:first-of-type {
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.formFieldContainer {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  align-items: center;
+  margin: 0 0 var(--extra-small-padding);
+}
+
+.sectionTitle {
+  font: var(--p-text);
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.addItemContainer {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding: 100px 20px 100px 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+}
+
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.text {
+  font-size: 20px;
+  margin: 20px 0 40px 0;
+}

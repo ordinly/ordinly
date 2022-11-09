@@ -1,0 +1,19 @@
+.container {
+  grid-column: auto;
+}
+
+@media only screen and (max-width: 1138px) {
+  .container {
+    grid-column: span 2;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentContainer > div:first-child {
+  min-width: 68px;
+  margin: 0 var(--small-padding) 0 0;
+}

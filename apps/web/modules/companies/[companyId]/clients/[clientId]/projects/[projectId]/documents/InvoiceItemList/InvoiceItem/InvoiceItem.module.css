@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small-padding);
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0px 1px 4px 4px var(--shadow-color);
+  margin: 0 0 var(--small-padding) 0;
+}
+
+.price {
+  flex: 1;
+}
+
+.title {
+  font: var(--p-text);
+  margin: 0 0 10px 0;
+}
+
+.value {
+  font-weight: bold;
+}
+
+.button {
+  align-self: flex-end;
+}

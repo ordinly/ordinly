@@ -1,0 +1,67 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  transition: all 0.25s;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: 4;
+}
+
+.background.open {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal {
+  width: calc(100vw - var(--small-padding) * 2);
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.25s;
+  background-color: var(--background-color);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 0;
+  padding: var(--medium-padding);
+  transform: translate(-50%, -40%);
+  border-radius: var(--border-radius-medium);
+}
+
+.modal.open {
+  transform: translate(-50%, -60%);
+  pointer-events: all;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary-text-color);
+  margin: 0 0 var(--small-padding) 0;
+  padding: 0 0 var(--small-padding) 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.actionsContainer {
+  display: flex;
+  flex-direction: row;
+  margin: var(--small-padding) 0 0 0;
+}
+
+.actionsContainer > button {
+  margin: 0 0 0 var(--extra-small-padding);
+}
+
+.actionsContainer > button:first-child {
+  margin: 0;
+}

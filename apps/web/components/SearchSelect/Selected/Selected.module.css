@@ -1,0 +1,40 @@
+.container {
+  padding: var(--small-padding);
+  background-color: var(--background-color-light);
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  flex-direction: row;
+  margin: var(--small-padding) 0 var(--extra-small-padding) 0;
+  max-width: 100%;
+}
+
+.infoContainer {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  flex: 1;
+}
+
+.actions {
+  align-self: center;
+}
+
+.title {
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.email {
+  margin: 0;
+}

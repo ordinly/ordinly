@@ -1,0 +1,27 @@
+.input {
+  display: none;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--small-padding);
+  border: 2px dashed var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  cursor: pointer;
+  background-color: var(--background-color-light);
+}
+
+.upload:hover {
+  border-color: var(--primary-color-light);
+  color: var(--primary-color-light);
+}
+
+.text {
+  margin: var(--extra-small-padding) 0 0 0;
+}
+
+.disabled {
+  cursor: not-allowed;
+}

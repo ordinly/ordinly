@@ -1,0 +1,30 @@
+.pill {
+  background-color: var(--background-color-black);
+  padding: var(--extra-small-padding) var(--small-padding);
+  border-radius: var(--border-radius-large);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--background-color);
+}
+
+.text {
+  margin: 0 0 0 var(--extra-small-padding);
+}
+
+.removeButton {
+  margin: 0 0 0 var(--extra-small-padding);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+.removeButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,22 @@
+:root {
+  /* PADDING */
+  --tiny-spacing: 0.25rem;
+  --extra-small-padding: 0.5rem;
+  --small-padding: 1rem;
+  --medium-padding: 2rem;
+  --large-padding: 3rem;
+
+  /* GRID */
+  --small-gap: 1rem;
+  --medium-gap: 2rem;
+  --large-gap: 3rem;
+
+  /* BORDER */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+
+  /* CONTROLS */
+  --small-control-height: 3rem;
+  --medium-control-height: 4rem;
+}

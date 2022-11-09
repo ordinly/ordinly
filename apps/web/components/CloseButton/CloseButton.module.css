@@ -1,0 +1,7 @@
+.button {
+  border: 0;
+  cursor: pointer;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: var(--border-radius-small);
+}

@@ -1,0 +1,56 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: min-content fit-content(40%) auto;
+  grid-template-areas:
+    "breadcrumbs breadcrumbs"
+    "title view-toggle"
+    "content content";
+
+  padding: var(--small-padding) var(--medium-padding);
+  height: 100%;
+}
+
+.titleContainer {
+  grid-area: title;
+  margin: 0 0 var(--medium-padding) 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--subtitle-text-color);
+  font-weight: normal;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--extra-small-padding);
+  align-items: flex-start;
+}
+
+.walkthrough {
+  grid-area: walkthrough;
+}
+
+.content {
+  grid-area: content;
+  overflow: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.breadcrumbs {
+  grid-area: breadcrumbs;
+  margin: 0 0 var(--small-padding);
+}
+
+@media only screen and (max-width: 999px) {
+  .page {
+    padding: var(--small-padding);
+  }
+}

@@ -1,0 +1,50 @@
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: var(--small-padding);
+  padding: 0;
+}
+
+.action {
+  color: var(--background-color-dark);
+  cursor: pointer;
+  padding: var(--extra-small-padding);
+}
+
+.action.active {
+  color: var(--primary-color);
+}
+
+.editor :global(div.public-DraftEditor-content) {
+  padding: var(--extra-small-padding) 0;
+  background-color: transparent;
+  margin: 0 0 var(--extra-small-padding) 0;
+}
+
+.editor.fixed :global(div.public-DraftEditor-content) {
+  height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editor.transparent :global(div.public-DraftEditor-content) {
+  background-color: transparent;
+}
+
+.editor:not(.readOnly) :global(div.public-DraftEditor-content) {
+  border-bottom: 2px solid var(--primary-text-color);
+}
+
+.editor:not(.readOnly) :global(div.public-DraftEditorPlaceholder-root) {
+  z-index: 2;
+  pointer-events: none;
+  padding: 6px 0 0 0;
+}
+
+.editor.disabled :global(div.public-DraftEditor-content) {
+  cursor: not-allowed;
+}

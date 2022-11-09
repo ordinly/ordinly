@@ -1,0 +1,33 @@
+.input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.label {
+  cursor: pointer;
+  display: inline-block;
+  font: var(--p-text);
+  border-right: 2px solid var(--background-color-dark);
+  padding: var(--extra-small-padding) var(--small-padding);
+}
+
+.label:first-of-type {
+  display: inline-block;
+  font: var(--p-text);
+  border: 2px solid var(--background-color-dark);
+  border-radius: var(--border-radius-small) 0 0 var(--border-radius-small);
+  padding: var(--extra-small-padding) var(--small-padding);
+}
+
+.label:last-of-type {
+  border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+  border: 2px solid var(--background-color-dark);
+  border-left: none;
+}
+
+.checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+  color: var(--background-color-light);
+}

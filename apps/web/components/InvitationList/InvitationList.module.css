@@ -1,0 +1,53 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--extra-small-padding);
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: var(--background-color);
+}
+
+.name {
+  flex: 1;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--extra-small-padding);
+}
+
+.button {
+  cursor: pointer;
+  background: none;
+  outline: inherit;
+  border-radius: var(--border-radius-small);
+  border: none;
+  padding-top: 4px;
+  transition: all 0.25s;
+}
+
+.accept {
+  border: 2px solid var(--success-regular);
+  color: var(--success-regular);
+}
+
+.accept:hover {
+  background-color: var(--success-regular);
+  color: var(--background-color-light);
+}
+
+.reject {
+  border: 2px solid var(--error-regular);
+  color: var(--error-regular);
+}
+
+.reject:hover {
+  background-color: var(--error-regular);
+  color: var(--background-color-light);
+}

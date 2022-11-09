@@ -1,0 +1,36 @@
+.option {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-padding);
+  padding: var(--extra-small-padding);
+  align-items: center;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: var(--background-color);
+}
+
+.option:hover {
+  background-color: var(--background-color-dark);
+}
+
+.name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.email {
+  margin: 0;
+}
+
+.selectedIcon {
+  margin: 0 var(--small-padding) 0 0;
+}
+
+.flexShrink {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
