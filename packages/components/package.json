@@ -1,0 +1,47 @@
+{
+  "name": "@ordinly/components",
+  "version": "0.0.1",
+  "description": "The reusable frontend React components for Ordinly",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ordinly/ordinly.git"
+  },
+  "author": "Sean MacKay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ordinly/ordinly/issues"
+  },
+  "homepage": "https://github.com/ordinly/ordinly#readme",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^4.0.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@types/lodash": "^4.14.188",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "autoprefixer": "^10.4.13",
+    "rollup": "^3.2.5",
+    "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tsconfig-paths": "^4.1.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.8.4",
+    "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0"
+  }
+}
