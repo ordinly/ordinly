@@ -1,0 +1,58 @@
+{
+  "settings": {
+    "invitations": { "edit": true },
+    "profile": {
+      "edit": true
+    },
+    "posts": {
+      "add": true,
+      "edit": true,
+      "remove": true
+    },
+    "priceBook": {
+      "add": true,
+      "edit": true,
+      "remove": true
+    },
+    "jobPostings": {
+      "add": true,
+      "edit": true,
+      "remove": true
+    }
+  },
+  "clients": {
+    "clients": { "add": true, "edit": true, "remove": true },
+    "contacts": {
+      "add": true,
+      "edit": true,
+      "remove": true
+    }
+  },
+  "projects": {
+    "projects": {
+      "add": true,
+      "assigned": { "edit": true, "remove": true },
+      "nonAssigned": { "view": true, "edit": true, "remove": true }
+    },
+    "tasks": {
+      "add": true,
+      "assigned": { "edit": true, "remove": true },
+      "nonAssigned": { "view": true, "edit": true, "remove": true }
+    },
+    "companies": {
+      "add": true,
+      "edit": true,
+      "remove": true
+    }
+  },
+  "people": {
+    "workers": { "add": true, "edit": true, "remove": true },
+    "teams": {
+      "add": true,
+      "assigned": { "edit": true },
+      "nonAssigned": { "edit": true },
+      "remove": true
+    },
+    "roles": { "add": true, "edit": true, "remove": true }
+  }
+}

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED='0' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "NODE_TLS_REJECT_UNAUTHORIZED='0' next start"
   },
@@ -19,7 +19,7 @@
     "lodash": "^4.17.21",
     "next": "~13.0.2",
     "next-transpile-modules": "^9.0.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.5",
     "react": "~18.2.0",
     "react-colorful": "^5.3.0",
     "react-dnd": "^14.0.4",

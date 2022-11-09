@@ -1,0 +1,9 @@
+FROM node:alpine
+
+WORKDIR /rest-api
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY dist dist/

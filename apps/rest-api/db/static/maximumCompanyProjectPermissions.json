@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "add": true,
+    "assigned": { "edit": true, "remove": true },
+    "nonAssigned": { "view": true, "edit": true, "remove": true }
+  },
+  "companies": {
+    "add": true,
+    "edit": true,
+    "remove": true
+  }
+}

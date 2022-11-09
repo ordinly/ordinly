@@ -416,6 +416,11 @@
       "packageName": "@ordinly/web",
       "projectFolder": "apps/web",
       "versionPolicyName": "individual"
+    },
+    {
+      "packageName": "@ordinly/rest-api",
+      "projectFolder": "apps/rest-api",
+      "versionPolicyName": "individual"
     }
   ]
 }

@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Admin",
+    "description": "The people in charge of how the rest of your company uses this system. They can assign people to teams, roles, and tasks.",
+    "permissions": {
+      "settings": {
+        "invitations": { "edit": true },
+        "profile": {
+          "edit": true
+        },
+        "posts": {
+          "add": true,
+          "edit": true,
+          "remove": true
+        },
+        "priceBook": {
+          "add": true,
+          "edit": true,
+          "remove": true
+        },
+        "jobPostings": {
+          "add": true,
+          "edit": true,
+          "remove": true
+        }
+      },
+      "clients": {
+        "add": true,
+        "edit": true,
+        "remove": true,
+        "contacts": {
+          "add": true,
+          "edit": true,
+          "remove": true
+        }
+      },
+      "projects": {
+        "projects": {
+          "add": true,
+          "assigned": { "edit": true, "remove": true },
+          "nonAssigned": { "view": true, "edit": true, "remove": true }
+        },
+        "tasks": {
+          "add": true,
+          "assigned": { "edit": true, "remove": true },
+          "nonAssigned": { "view": true, "edit": true, "remove": true }
+        },
+        "documents": {
+          "add": true,
+          "edit": true,
+          "remove": true,
+          "view": true
+        }
+      },
+      "people": {
+        "workers": { "add": true, "edit": true, "remove": true },
+        "teams": {
+          "add": true,
+          "remove": true,
+          "assigned": { "edit": true },
+          "nonAssigned": { "edit": true }
+        },
+        "roles": { "add": true, "edit": true, "remove": true }
+      }
+    }
+  },
+  {
+    "name": "Team lead",
+    "description": "The people in charge of a group of workers. They will need to be able to assign work to the people on their teams.",
+    "permissions": {
+      "settings": {
+        "invitations": { "edit": false },
+        "profile": {
+          "edit": false
+        },
+        "posts": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        },
+        "priceBook": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        },
+        "jobPostings": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        }
+      },
+      "clients": {
+        "add": false,
+        "edit": false,
+        "remove": false,
+        "contacts": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        }
+      },
+      "projects": {
+        "projects": {
+          "add": true,
+          "assigned": { "edit": true, "remove": true },
+          "nonAssigned": { "view": false, "edit": false, "remove": false }
+        },
+        "tasks": {
+          "add": true,
+          "assigned": { "edit": true, "remove": true },
+          "nonAssigned": { "view": false, "edit": false, "remove": false }
+        },
+        "documents": {
+          "add": false,
+          "edit": false,
+          "remove": false,
+          "view": false
+        }
+      },
+      "people": {
+        "workers": { "add": false, "edit": false, "remove": false },
+        "teams": {
+          "add": false,
+          "remove": false,
+          "assigned": { "edit": true },
+          "nonAssigned": { "edit": false }
+        },
+        "roles": { "add": false, "edit": false, "remove": false }
+      }
+    }
+  },
+  {
+    "name": "General worker",
+    "description": "The people with the least amount of managerial resposibilities. They only need access to what they are assigned to.",
+    "permissions": {
+      "settings": {
+        "invitations": { "edit": false },
+        "profile": {
+          "edit": false
+        },
+        "posts": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        },
+        "priceBook": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        },
+        "jobPostings": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        }
+      },
+      "clients": {
+        "add": false,
+        "edit": false,
+        "remove": false,
+        "contacts": {
+          "add": false,
+          "edit": false,
+          "remove": false
+        }
+      },
+      "projects": {
+        "projects": {
+          "add": false,
+          "assigned": { "edit": true, "remove": false },
+          "nonAssigned": { "view": false, "edit": false, "remove": false }
+        },
+        "tasks": {
+          "add": false,
+          "assigned": { "edit": true, "remove": false },
+          "nonAssigned": { "view": false, "edit": false, "remove": false }
+        },
+        "documents": {
+          "add": false,
+          "edit": false,
+          "remove": false,
+          "view": false
+        }
+      },
+      "people": {
+        "workers": { "add": false, "edit": false, "remove": false },
+        "teams": {
+          "add": false,
+          "remove": false,
+          "assigned": { "edit": false },
+          "nonAssigned": { "edit": false }
+        },
+        "roles": { "add": false, "edit": false, "remove": false }
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+# Install neccessary global deps
+FROM node:16.14-alpine AS global
+
+RUN npm install -g nodemon
+RUN npm install -g ts-node
+RUN npm install -g tsconfig-paths
+
+# Install package deps
+FROM global AS deps
+
+WORKDIR /rest-api
+
+COPY package*.json ./
+
+RUN npm install
+
+# Run the app
+FROM deps AS run
+
+COPY . ./
+
+CMD npm run dev

@@ -1,0 +1,17 @@
+{
+  "regions": [
+    { "name": "Alberta", "country": "CA", "id": "01" },
+    { "name": "British Columbia", "country": "CA", "id": "02" },
+    { "name": "Manitoba", "country": "CA", "id": "03" },
+    { "name": "New Brunswick/Nouveau-Brunswick", "country": "CA", "id": "04" },
+    { "name": "Northwest Territories", "country": "CA", "id": "13" },
+    { "name": "Nova Scotia", "country": "CA", "id": "07" },
+    { "name": "Nunavut", "country": "CA", "id": "14" },
+    { "name": "Ontario", "country": "CA", "id": "08" },
+    { "name": "Prince Edward Island", "country": "CA", "id": "09" },
+    { "name": "Québec", "country": "CA", "id": "10" },
+    { "name": "Saskatchewan", "country": "CA", "id": "11" },
+    { "name": "Yukon", "country": "CA", "id": "12" },
+    { "name": "Newfoundland and Labrador", "country": "CA", "id": "05" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "projectStatuses": [
+    { "value": "Proposal", "label": "Proposal" },
+    { "value": "Not started", "label": "Not started" },
+    { "value": "On hold", "label": "On hold" },
+    { "value": "In progress", "label": "In progress" },
+    { "value": "Complete", "label": "Complete" },
+    { "value": "Cancelled", "label": "Cancelled" },
+    { "value": "Rejected", "label": "Rejected" }
+  ]
+}
