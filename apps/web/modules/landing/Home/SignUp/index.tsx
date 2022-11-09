@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 
 import { useRouter } from "next/router";
 
-import { signUp } from "@ordinly/api-abstraction/users";
+import { signUp } from "@ordinly/api-abstraction";
 
 import { Form } from "@components/Form";
 import { Field } from "@components/Field";

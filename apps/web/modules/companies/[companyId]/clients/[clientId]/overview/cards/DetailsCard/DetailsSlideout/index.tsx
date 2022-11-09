@@ -2,13 +2,9 @@ import { useContext, useMemo, useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
 
-import { searchCompanies } from "@ordinly/api-abstraction/companies";
+import { searchCompanies } from "@ordinly/api-abstraction";
 
-import {
-  getCountries,
-  getRegions,
-  getCities,
-} from "@ordinly/api-abstraction/location";
+import { getCountries, getRegions, getCities } from "@ordinly/api-abstraction";
 
 import { Slideout } from "@components/Slideout";
 import { Form } from "@components/Form";
@@ -21,7 +17,7 @@ import { Select } from "@components/Select";
 import ClientContext from "@contexts/ClientContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateClientDetails } from "@ordinly/api-abstraction/companies";
+import { updateClientDetails } from "@ordinly/api-abstraction";
 
 import DeleteClientModal from "./DeleteClientModal";
 
@@ -204,8 +200,8 @@ const DetailsSlideout = () => {
 
                           const response = await getCities({
                             regionId: newRegion,
-                            countryId:
-                              form.getFieldState("address.country").value,
+                            countryId: form.getFieldState("address.country")
+                              .value,
                           });
 
                           if (!("error" in response)) {

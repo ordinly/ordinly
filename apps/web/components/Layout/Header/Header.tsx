@@ -8,7 +8,7 @@ import UserContext from "@contexts/UserContext";
 
 import { Button, ButtonWithMenu } from "@components/Button";
 
-import { logout } from "@ordinly/api-abstraction/users";
+import { logout } from "@ordinly/api-abstraction";
 
 import styles from "./Header.module.css";
 

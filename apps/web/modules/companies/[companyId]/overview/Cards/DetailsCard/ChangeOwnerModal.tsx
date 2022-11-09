@@ -10,7 +10,7 @@ import { required } from "@components/Form/validation";
 import { Field } from "@components/Field";
 import { Select } from "@components/Select";
 
-import { updateCompanyOwner } from "@ordinly/api-abstraction/companies";
+import { updateCompanyOwner } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";
@@ -35,8 +35,9 @@ const ChangeOwnershipModal = () => {
         router.replace("/companies");
       }
     } catch (caught) {
-      const { error = "There was an error changing this company's owner" } =
-        caught;
+      const {
+        error = "There was an error changing this company's owner",
+      } = caught;
 
       notification({
         variant: "error",

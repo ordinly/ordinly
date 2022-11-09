@@ -13,7 +13,7 @@ import NotificationContext from "@contexts/NotificationContext";
 
 import diff from "@util/diff";
 
-import { updateCompanyDetails } from "@ordinly/api-abstraction/companies";
+import { updateCompanyDetails } from "@ordinly/api-abstraction";
 
 import DeleteCompanyModal from "./DeleteCompanyModal";
 import MakePublicModal from "./MakePublicModal";

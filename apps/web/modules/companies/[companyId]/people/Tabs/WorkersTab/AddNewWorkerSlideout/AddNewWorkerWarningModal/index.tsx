@@ -6,7 +6,7 @@ import sleep from "@util/sleep";
 
 import { Modal } from "@components/Modal";
 
-import { inviteWorkers } from "@ordinly/api-abstraction/companies";
+import { inviteWorkers } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";

@@ -11,7 +11,7 @@ import { Input } from "@components/Input";
 import { ProfilePicture } from "@components/ProfilePicture";
 import { Icon } from "@components/Icon";
 
-import { createCompany } from "@ordinly/api-abstraction/companies";
+import { createCompany } from "@ordinly/api-abstraction";
 
 import NotificationContext from "@contexts/NotificationContext";
 

@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 
 import NotificationContext from "@contexts/NotificationContext";
 
-import { getCompany } from "@ordinly/api-abstraction/companies";
+import { getCompany } from "@ordinly/api-abstraction";
 
-import type { Company, Permissions } from "@ordinly/api-abstraction/companies";
+import type { Company, Permissions } from "@ordinly/api-abstraction";
 
 const CompanyContext = createContext<{
   company: any;
@@ -32,7 +32,7 @@ export const CompanyProvider = ({ children }) => {
 
         if (router.query.companyId) {
           const response = await getCompany({
-            companyId: router.query.companyId,
+            companyId: router.query.companyId as string,
           });
 
           if ("company" in response) {

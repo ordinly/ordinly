@@ -11,5 +11,5 @@ export type ContentSwitcherItemProps = {
   disabled?: boolean;
   icon?: IconType;
   value: string;
-  size: "medium" | "large";
+  size?: "medium" | "large";
 };

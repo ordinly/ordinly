@@ -2,7 +2,7 @@ import { useContext, useState, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { searchUsers } from "@ordinly/api-abstraction/users";
+import { searchUsers } from "@ordinly/api-abstraction";
 
 import UserContext from "@contexts/UserContext";
 import CompanyContext from "@contexts/CompanyContext";
@@ -16,10 +16,7 @@ import { TextList } from "@components/TextList";
 
 import { required, isEmail } from "@components/Form/validation";
 
-import {
-  revokeInvitation,
-  updateInvitation,
-} from "@ordinly/api-abstraction/companies";
+import { revokeInvitation, updateInvitation } from "@ordinly/api-abstraction";
 
 import AddNewWorkerWarningModal from "./AddNewWorkerWarningModal";
 

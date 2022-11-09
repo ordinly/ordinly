@@ -1,9 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 
-import { Icon } from "@components/Icon";
-
-import { getImage } from "@ordinly/api-abstraction/images";
-
 import styles from "./ImageUpload.module.css";
 
 import type { ImageUploadProps } from "./types";

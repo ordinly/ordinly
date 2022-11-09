@@ -17,8 +17,8 @@ import { Input } from "@components/Input";
 import { Priority } from "@components/Priority";
 import { Status } from "@components/Status";
 
-import { getUserProjects } from "@ordinly/api-abstraction/users";
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getUserProjects } from "@ordinly/api-abstraction";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import { AddNewProjectSlideout } from "@modules/personal/projects/AddNewProjectSlideout";
 

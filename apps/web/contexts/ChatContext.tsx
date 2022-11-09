@@ -3,11 +3,7 @@ import React, { useState, createContext, useContext, useCallback } from "react";
 import CompaniesContext from "@contexts/CompaniesContext";
 import UserContext from "@contexts/UserContext";
 
-import {
-  getUserChat,
-  getTeamChat,
-  getUnreads,
-} from "@ordinly/api-abstraction/chat";
+import { getUserChat, getTeamChat, getUnreads } from "@ordinly/api-abstraction";
 import { useEffect } from "react";
 
 type Message = {

@@ -8,7 +8,7 @@ import { Modal } from "@components/Modal";
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateCompanyPublicity } from "@ordinly/api-abstraction/companies/updateCompanyPublicity";
+import { updateCompanyPublicity } from "@ordinly/api-abstraction";
 
 import styles from "./Modal.module.css";
 

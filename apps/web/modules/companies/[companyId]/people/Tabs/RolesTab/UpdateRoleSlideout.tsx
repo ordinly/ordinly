@@ -17,7 +17,7 @@ import {
   updateRole,
   removeRole,
   getCompanyRole,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import type { ButtonProps } from "@components/Button";
 
@@ -36,8 +36,8 @@ const UpdateRoleSlideout = ({ onSubmit: onSubmitProp }) => {
     if (router.query["role-id"]) {
       (async () => {
         const { role: fetchedRole } = await getCompanyRole({
-          roleId: router.query["role-id"],
-          companyId: router.query["companyId"],
+          roleId: router.query["role-id"] as string,
+          companyId: router.query["companyId"] as string,
         });
 
         setRole(fetchedRole);

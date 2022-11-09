@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import { verifyAccount } from "@ordinly/api-abstraction/users";
+import { verifyAccount } from "@ordinly/api-abstraction";
 
 import { Button } from "@components/Button";
 

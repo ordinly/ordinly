@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Button } from "@components/Button";
 import { Modal } from "@components/Modal";
 
-import { deleteInvoice } from "@ordinly/api-abstraction/companies";
+import { deleteInvoice } from "@ordinly/api-abstraction";
 
 import NotificationContext from "@contexts/NotificationContext";
 import ClientContext from "@contexts/ClientContext";

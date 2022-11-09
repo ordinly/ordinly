@@ -10,10 +10,7 @@ import { Grid } from "@components/Grid";
 import { Modal } from "@components/Modal";
 import { InvitationTile } from "@components/Tile";
 
-import {
-  acceptInvitation,
-  declineInvitation,
-} from "@ordinly/api-abstraction/users";
+import { acceptInvitation, declineInvitation } from "@ordinly/api-abstraction";
 
 import UserContext from "@contexts/UserContext";
 import WalkthroughContext from "@contexts/WalkthroughContext";
@@ -67,7 +64,7 @@ const Dashboard = () => {
 
   const onAcceptInvitation = async () => {
     await acceptInvitation({
-      invitationId: router?.query["accept-invitation"],
+      invitationId: router?.query["accept-invitation"] as string,
     });
 
     await fetchUser();
@@ -93,7 +90,7 @@ const Dashboard = () => {
 
   const onDeclineInvitation = async () => {
     await declineInvitation({
-      invitationId: router?.query["decline-invitation"],
+      invitationId: router?.query["decline-invitation"] as string,
     });
 
     await fetchUser();

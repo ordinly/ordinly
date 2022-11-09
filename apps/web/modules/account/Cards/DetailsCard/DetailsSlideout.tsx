@@ -14,7 +14,7 @@ import { required } from "@components/Form/validation";
 import UserContext from "@contexts/UserContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateAccount } from "@ordinly/api-abstraction/users";
+import { updateAccount } from "@ordinly/api-abstraction";
 
 import ChangePasswordModal from "./ChangePasswordModal";
 

@@ -2,7 +2,7 @@ import { useContext, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { getCompanyWorkers } from "@ordinly/api-abstraction/companies";
+import { getCompanyWorkers } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";
@@ -16,7 +16,7 @@ import { SearchSelect } from "@components/SearchSelect";
 
 import { required } from "@components/Form/validation";
 
-import { createTeam } from "@ordinly/api-abstraction/companies";
+import { createTeam } from "@ordinly/api-abstraction";
 
 import styles from "./AddNewTeamSlideout.module.css";
 

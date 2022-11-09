@@ -7,7 +7,7 @@ import {
   updateInvitationToPersonalProject,
   updateCompanyPermissionsOnPersonalProject,
   removeCompanyFromPersonalProject,
-} from "@ordinly/api-abstraction/users";
+} from "@ordinly/api-abstraction";
 
 import ProjectContext from "@contexts/ProjectContext";
 

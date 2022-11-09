@@ -4,8 +4,8 @@ import Head from "next/head";
 
 import { useRouter } from "next/router";
 
-import { getCompanyProjectTasks } from "@ordinly/api-abstraction/companies";
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getCompanyProjectTasks } from "@ordinly/api-abstraction";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import CompanyClientProjectWrapper from "@modules/companies/[companyId]/clients/[clientId]/projects/[projectId]/CompanyClientProjectWrapper";
 
@@ -23,7 +23,7 @@ import { TableCell } from "@components/Table";
 import AddTaskSlideout from "@modules/companies/[companyId]/projects/[projectId]/tasks/AddNewTaskSlideout";
 import UpdateTaskSlideout from "@modules/companies/[companyId]/projects/[projectId]/tasks/UpdateTaskSlideout";
 
-import type { Task } from "@ordinly/api-abstraction/companies";
+import type { Task } from "@ordinly/api-abstraction";
 
 const Wrapped = () => (
   <CompanyClientProjectWrapper>

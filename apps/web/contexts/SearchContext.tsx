@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import NotificationContext from "@contexts/NotificationContext";
 
-import { searchCompanies } from "@ordinly/api-abstraction/companies";
+import { searchCompanies } from "@ordinly/api-abstraction";
 
 type Search = {
   type?: "jobs" | "companies";

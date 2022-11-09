@@ -10,7 +10,7 @@ import NotificationContext from "@contexts/NotificationContext";
 import { Form } from "@components/Form";
 import { Slideout } from "@components/Slideout";
 
-import { createCompanyProjectTask } from "@ordinly/api-abstraction/companies";
+import { createCompanyProjectTask } from "@ordinly/api-abstraction";
 
 import GeneralDetailsStep from "./steps/GeneralDetails";
 import TodoStep from "./steps/Todo";

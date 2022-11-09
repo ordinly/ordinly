@@ -15,7 +15,7 @@ import { Form } from "@components/Form";
 import { Button } from "@components/Button";
 import { Modal } from "@components/Modal";
 
-import { updateTask, removeTask } from "@ordinly/api-abstraction/companies";
+import { updateTask, removeTask } from "@ordinly/api-abstraction";
 
 import { required } from "@components/Form/validation";
 

@@ -13,7 +13,7 @@ import { Form } from "@components/Form";
 
 import { required } from "@components/Form/validation";
 
-import { updateContact } from "@ordinly/api-abstraction/companies";
+import { updateContact } from "@ordinly/api-abstraction";
 
 import GeneralDetailsTab from "./tabs/GeneralDetails";
 import NotesTab from "./tabs/Notes";

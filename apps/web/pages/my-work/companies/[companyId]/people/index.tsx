@@ -8,7 +8,7 @@ import {
   getCompanyWorkers,
   getCompanyTeams,
   getCompanyRoles,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import CompanyWrapper from "@modules/companies/[companyId]/CompanyWrapper";
 

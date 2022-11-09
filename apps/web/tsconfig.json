@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "es5",
     "downlevelIteration": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -16,19 +20,49 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@contexts/*": ["contexts/*"],
-      "@hooks/*": ["hooks/*"],
-      "@util/*": ["util/*"],
-      "@theme/*": ["theme/*"],
-      "@guards/*": ["guards/*"],
-      "@pages/*": ["pages/*"],
-      "@sockets": ["sockets"],
-      "@sockets/*": ["sockets/*"],
-      "@modules/*": ["modules/*"],
-      "@assets/*": ["assets/*"]
-    }
+      "@components/*": [
+        "components/*"
+      ],
+      "@contexts/*": [
+        "contexts/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@util/*": [
+        "util/*"
+      ],
+      "@theme/*": [
+        "theme/*"
+      ],
+      "@guards/*": [
+        "guards/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@sockets": [
+        "sockets"
+      ],
+      "@sockets/*": [
+        "sockets/*"
+      ],
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "./node_modules/@ordinly"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "./node_modules/@ordinly"
+  ]
 }

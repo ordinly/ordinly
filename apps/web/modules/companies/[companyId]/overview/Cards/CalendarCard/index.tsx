@@ -7,7 +7,7 @@ import { Calendar } from "@components/Calendar";
 
 import CompanyContext from "@contexts/CompanyContext";
 
-import { getCompanyEvents } from "@ordinly/api-abstraction/companies";
+import { getCompanyEvents } from "@ordinly/api-abstraction";
 
 import styles from "./CalendarCard.module.css";
 

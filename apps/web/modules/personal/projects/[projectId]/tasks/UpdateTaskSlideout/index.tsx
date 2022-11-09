@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 import arrayMutators from "final-form-arrays";
 
 import {
-  updateTask,
-  removeTask,
+  updateUserTask,
+  removeUserTask,
   getUserProjectTask,
-} from "@ordinly/api-abstraction/users";
+} from "@ordinly/api-abstraction";
 
 import NotificationContext from "@contexts/NotificationContext";
 
@@ -68,7 +68,7 @@ const UpdateTaskSlideout = ({ onSubmit: onSubmitProp, tasks }) => {
     }
 
     try {
-      await updateTask({
+      await updateUserTask({
         taskId: router.query["task-id"],
         projectId: router.query["projectId"] as string,
         newFiles,
@@ -128,7 +128,7 @@ const UpdateTaskSlideout = ({ onSubmit: onSubmitProp, tasks }) => {
   const onRemoveTask = async () => {
     try {
       if (router.query["task-id"] && router.query["projectId"]) {
-        await removeTask({
+        await removeUserTask({
           taskId: router.query["task-id"] as string,
           projectId: router.query["projectId"] as string,
         });

@@ -1,9 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-import {
-  searchCompanies,
-  getCompaniesByIds,
-} from "@ordinly/api-abstraction/companies";
+import { searchCompanies, getCompaniesByIds } from "@ordinly/api-abstraction";
 
 import { useTransition, animated, config } from "@react-spring/web";
 

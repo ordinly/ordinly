@@ -61,7 +61,7 @@ export default function Usecases() {
 
           <ContentSwitcher
             id="feature-tabs"
-            value={router?.query?.["tab"]}
+            value={router?.query?.["tab"] as string}
             onChange={onChangeTab}
             items={[
               { id: "projects", text: "Projects", value: "projects" },

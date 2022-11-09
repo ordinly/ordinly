@@ -14,12 +14,8 @@ import { Form } from "@components/Form";
 import { Field } from "@components/Field";
 import { Select } from "@components/Select";
 
-import {
-  getCountries,
-  getRegions,
-  getCities,
-} from "@ordinly/api-abstraction/location";
-import { createInvoice, createQuote } from "@ordinly/api-abstraction/companies";
+import { getCountries, getRegions, getCities } from "@ordinly/api-abstraction";
+import { createInvoice, createQuote } from "@ordinly/api-abstraction";
 
 import InvoiceForm from "./Forms/InvoiceForm";
 import QuoteForm from "./Forms/QuoteForm";

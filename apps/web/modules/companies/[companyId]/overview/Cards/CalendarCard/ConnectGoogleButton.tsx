@@ -11,7 +11,7 @@ import UserContext from "@contexts/UserContext";
 import {
   connectGoogleAccount,
   updateGoogleTokens,
-} from "@ordinly/api-abstraction/users";
+} from "@ordinly/api-abstraction";
 
 import UpdateGoogleCalendarConfigSlideout from "./UpdateGoogleCalendarConfigSlideout.ts";
 

@@ -8,7 +8,7 @@ import NotificationContext from "@contexts/NotificationContext";
 
 import { Modal } from "@components/Modal";
 
-import { leaveCompany } from "@ordinly/api-abstraction/companies";
+import { leaveCompany } from "@ordinly/api-abstraction";
 
 import styles from "./LeaveCompanyModal.module.css";
 

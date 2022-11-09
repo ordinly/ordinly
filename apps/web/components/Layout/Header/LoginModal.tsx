@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { useRouter } from "next/router";
 
-import { login } from "@ordinly/api-abstraction/users";
+import { login } from "@ordinly/api-abstraction";
 
 import { Modal } from "@components/Modal";
 import { Form } from "@components/Form";

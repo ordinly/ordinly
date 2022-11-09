@@ -10,7 +10,7 @@ import NotificationContext from "@contexts/NotificationContext";
 import { Form } from "@components/Form";
 import { Slideout } from "@components/Slideout";
 
-import { createClient } from "@ordinly/api-abstraction/companies";
+import { createClient } from "@ordinly/api-abstraction";
 
 import GeneralDetailsStep from "./steps/GeneralDetails";
 import ContactsStep from "./steps/Contacts";

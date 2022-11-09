@@ -6,12 +6,12 @@ import NotificationContext from "@contexts/NotificationContext";
 import SocketContext from "@contexts/SocketContext";
 import UserContext from "@contexts/UserContext";
 
-import { getProject } from "@ordinly/api-abstraction/companies";
-import { getCompanyProject } from "@ordinly/api-abstraction/companies";
+import { getProject } from "@ordinly/api-abstraction";
+import { getCompanyProject } from "@ordinly/api-abstraction";
 
-import { getUserProject } from "@ordinly/api-abstraction/users";
+import { getUserProject } from "@ordinly/api-abstraction";
 
-import type { Project } from "@ordinly/api-abstraction/companies";
+import type { Project } from "@ordinly/api-abstraction";
 
 const ProjectContext = createContext<{
   project: any;
@@ -33,7 +33,7 @@ export const ProjectProvider = ({ children }) => {
     try {
       if (router.pathname.split("/")[2] === "personal") {
         const response = await getUserProject({
-          projectId: router.query.projectId,
+          projectId: router.query.projectId as string,
         });
 
         if ("project" in response) {
@@ -44,13 +44,13 @@ export const ProjectProvider = ({ children }) => {
           const response =
             router.pathname.split("/")[2] === "companies"
               ? await getCompanyProject({
-                  companyId: router.query.companyId,
-                  projectId: router.query.projectId,
+                  companyId: router.query.companyId as string,
+                  projectId: router.query.projectId as string,
                 })
               : await getProject({
-                  companyId: router.query.companyId,
-                  clientId: router.query.clientId,
-                  projectId: router.query.projectId,
+                  companyId: router.query.companyId as string,
+                  clientId: router.query.clientId as string,
+                  projectId: router.query.projectId as string,
                 });
 
           if ("project" in response) {

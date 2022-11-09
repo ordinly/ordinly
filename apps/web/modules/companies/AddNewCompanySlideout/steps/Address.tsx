@@ -4,11 +4,7 @@ import { Field } from "@components/Field";
 import { Input } from "@components/Input";
 import { Select } from "@components/Select";
 
-import {
-  getCountries,
-  getRegions,
-  getCities,
-} from "@ordinly/api-abstraction/location";
+import { getCountries, getRegions, getCities } from "@ordinly/api-abstraction";
 
 import { isPostalCode, required } from "@components/Form/validation";
 

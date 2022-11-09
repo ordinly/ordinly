@@ -5,8 +5,8 @@ import {
   getCompanyProjectCompanies,
   getCompanyTeams,
   getCompanyWorkers,
-} from "@ordinly/api-abstraction/companies";
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+} from "@ordinly/api-abstraction";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import { Field } from "@components/Field";
 import { Input } from "@components/Input";

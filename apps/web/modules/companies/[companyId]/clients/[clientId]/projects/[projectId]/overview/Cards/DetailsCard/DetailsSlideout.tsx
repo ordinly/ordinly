@@ -9,7 +9,7 @@ import CompanyContext from "@contexts/CompanyContext";
 import ProjectContext from "@contexts/ProjectContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateProjectDetails } from "@ordinly/api-abstraction/companies";
+import { updateProjectDetails } from "@ordinly/api-abstraction";
 
 import DeleteProjectModal from "./DeleteProjectModal";
 

@@ -8,7 +8,7 @@ import {
   removeCompanyFromCompanyProject,
   updateCompanyPermissionsOnCompanyProject,
   getCompanyProjectCompany,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import ProjectContext from "@contexts/ProjectContext";
 

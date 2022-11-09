@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 
 import { useSpring, animated } from "@react-spring/web";
 
-import { getCompanyProfile } from "@ordinly/api-abstraction/companies";
-
 import { Button } from "@components/Button";
 import { RatingStars } from "@components/RatingStars";
 import { Tabs } from "@components/Tabs";

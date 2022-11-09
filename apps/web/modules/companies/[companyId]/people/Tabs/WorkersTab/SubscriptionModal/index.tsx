@@ -7,7 +7,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Button } from "@components/Button";
 import { Modal } from "@components/Modal";
 
-import { subscribe } from "@ordinly/api-abstraction/companies";
+import { subscribe } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";
@@ -32,8 +32,9 @@ const SubscriptionModal = () => {
         sessionId,
       });
     } catch (caught) {
-      const { error = "There was an error creating this subscription" } =
-        caught;
+      const {
+        error = "There was an error creating this subscription",
+      } = caught;
 
       notification({
         variant: "error",

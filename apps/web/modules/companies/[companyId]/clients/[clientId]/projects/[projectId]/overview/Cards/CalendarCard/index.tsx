@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Card } from "@components/Card";
 import { Calendar } from "@components/Calendar";
 
-import { getCompanyEvents } from "@ordinly/api-abstraction/companies";
+import { getCompanyEvents } from "@ordinly/api-abstraction";
 
 const CalendarCard = () => {
   const [events, setEvents] = useState([]);

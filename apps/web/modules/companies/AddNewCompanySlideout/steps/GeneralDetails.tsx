@@ -8,7 +8,7 @@ import { TextArea } from "@components/TextArea";
 import { ProfilePicture } from "@components/ProfilePicture";
 import { MultiSelect } from "@components/MultiSelect";
 
-import { validateEmail, getTags } from "@ordinly/api-abstraction/companies";
+import { validateEmail, getTags } from "@ordinly/api-abstraction";
 
 import { isEmail, isPhoneNumber, required } from "@components/Form/validation";
 

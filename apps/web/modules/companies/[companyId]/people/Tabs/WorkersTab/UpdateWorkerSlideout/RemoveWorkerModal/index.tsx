@@ -7,7 +7,7 @@ import NotificationContext from "@contexts/NotificationContext";
 
 import { Modal } from "@components/Modal";
 
-import { removeWorker } from "@ordinly/api-abstraction/companies";
+import { removeWorker } from "@ordinly/api-abstraction";
 
 import styles from "./RemoveWorkerModal.module.css";
 

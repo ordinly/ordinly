@@ -6,10 +6,7 @@ import ProjectContext from "@contexts/ProjectContext";
 
 import { FileUpload } from "@components/FileUpload";
 
-import {
-  addFileToTask,
-  removeFileFromTask,
-} from "@ordinly/api-abstraction/companies";
+import { addFileToTask, removeFileFromTask } from "@ordinly/api-abstraction";
 
 import styles from "./FilesPage.module.css";
 

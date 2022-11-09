@@ -1,12 +1,12 @@
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
 
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 import {
   getCompanyProjectCompanies,
   getCompanyTeams,
   getCompanyWorkers,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import { Field } from "@components/Field";
 import { Input } from "@components/Input";

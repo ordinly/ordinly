@@ -2,7 +2,7 @@ import { useEffect, useState, useContext, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { getCompanyClients } from "@ordinly/api-abstraction/companies";
+import { getCompanyClients } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 
@@ -17,7 +17,7 @@ import {
   isEndDateLessThanStartDate,
 } from "@components/Form/validation";
 
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 const now = new Date();
 

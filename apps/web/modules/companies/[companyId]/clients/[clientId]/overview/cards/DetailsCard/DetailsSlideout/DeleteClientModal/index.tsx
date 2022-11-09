@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import { Modal } from "@components/Modal";
 
-import { deleteClient } from "@ordinly/api-abstraction/companies";
+import { deleteClient } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import ClientContext from "@contexts/ClientContext";

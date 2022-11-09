@@ -4,8 +4,8 @@ import Head from "next/head";
 
 import { useRouter } from "next/router";
 
-import { getCompanyProjects } from "@ordinly/api-abstraction/companies";
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getCompanyProjects } from "@ordinly/api-abstraction";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import { PageContent } from "@components/Layout";
 import { ProjectTile } from "@components/Tile";

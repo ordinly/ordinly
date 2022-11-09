@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import UserContext from "@contexts/UserContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { persistentLogin } from "@ordinly/api-abstraction/users";
+import { persistentLogin } from "@ordinly/api-abstraction";
 
 const AuthenticationGuard = () => {
   const { user, setUser } = useContext(UserContext);

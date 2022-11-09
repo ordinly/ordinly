@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 
 import { loadStripe } from "@stripe/stripe-js";
 
-import { subscribe } from "@ordinly/api-abstraction/companies";
+import { subscribe } from "@ordinly/api-abstraction";
 
-import { updateCompanySubscription } from "@ordinly/api-abstraction/companies";
+import { updateCompanySubscription } from "@ordinly/api-abstraction";
 
 import UserContext from "@contexts/UserContext";
 import CompanyContext from "@contexts/CompanyContext";

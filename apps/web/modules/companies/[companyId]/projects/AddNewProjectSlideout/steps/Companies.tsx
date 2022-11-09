@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import { searchCompanies } from "@ordinly/api-abstraction/companies";
+import { searchCompanies } from "@ordinly/api-abstraction";
 
 import { Field } from "@components/Field";
 import { SearchSelect } from "@components/SearchSelect";

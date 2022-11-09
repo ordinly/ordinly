@@ -12,7 +12,7 @@ import UserContext from "@contexts/UserContext";
 
 import { required } from "@components/Form/validation";
 
-import { changePassword } from "@ordinly/api-abstraction/users";
+import { changePassword } from "@ordinly/api-abstraction";
 
 const ChangePasswordModal = () => {
   const { notification } = useContext(NotificationContext);

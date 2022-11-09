@@ -3,7 +3,7 @@ import React, { useState, createContext, useContext, useEffect } from "react";
 import NotificationContext from "@contexts/NotificationContext";
 import SocketContext from "@contexts/SocketContext";
 
-import { getUser } from "@ordinly/api-abstraction/users";
+import { getUser } from "@ordinly/api-abstraction";
 
 const UserContext = createContext<{
   user: User;

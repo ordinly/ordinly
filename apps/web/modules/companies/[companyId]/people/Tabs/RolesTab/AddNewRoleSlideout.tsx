@@ -15,7 +15,7 @@ import { PermissionsInput } from "@components/PermissionsInput";
 import {
   createRole,
   getCompanyRoleMinimumPermissions,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import styles from "./AddNewRoleSlideout.module.css";
 

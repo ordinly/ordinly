@@ -11,15 +11,21 @@ import CompaniesContext from "@contexts/CompaniesContext";
 import ChatContext from "@contexts/ChatContext";
 import SocketContext from "@contexts/SocketContext";
 
-import { updateChatRead } from "@ordinly/api-abstraction/chat";
+import { updateChatRead } from "@ordinly/api-abstraction";
 
 import styles from "./Window.module.css";
 
 const Window = ({ open, onClose }) => {
   const { user } = useContext(UserContext);
   const { companies, refreshCompanies } = useContext(CompaniesContext);
-  const { to, updateTo, addMessage, chat, getUnreadMessages, unreads } =
-    useContext(ChatContext);
+  const {
+    to,
+    updateTo,
+    addMessage,
+    chat,
+    getUnreadMessages,
+    unreads,
+  } = useContext(ChatContext);
   const { socket } = useContext(SocketContext);
 
   const [activeCompany, setActiveCompany] = useState(0);

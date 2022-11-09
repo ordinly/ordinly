@@ -2,9 +2,9 @@ import { useContext, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { getCompanyClients } from "@ordinly/api-abstraction/companies";
+import { getCompanyClients } from "@ordinly/api-abstraction";
 
-import { respondToInvitation } from "@ordinly/api-abstraction/companies";
+import { respondToInvitation } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 

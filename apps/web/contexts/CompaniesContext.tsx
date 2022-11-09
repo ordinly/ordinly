@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 
-import { WorkCompany, getCompanies } from "@ordinly/api-abstraction/companies";
+import { WorkCompany, getCompanies } from "@ordinly/api-abstraction";
 
 import NotificationContext from "@contexts/NotificationContext";
 import UserContext from "@contexts/UserContext";

@@ -3,7 +3,7 @@ import { useContext, useCallback } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { getCompanyProjectCompanies } from "@ordinly/api-abstraction/companies";
+import { getCompanyProjectCompanies } from "@ordinly/api-abstraction";
 
 import ProjectContext from "@contexts/ProjectContext";
 import CompanyContext from "@contexts/CompanyContext";

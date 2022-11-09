@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
 
-import { getUserProjectCompanies } from "@ordinly/api-abstraction/users";
+import { getUserProjectCompanies } from "@ordinly/api-abstraction";
 
 import { Field } from "@components/Field";
 import { Input } from "@components/Input";
@@ -10,7 +10,7 @@ import { Select } from "@components/Select";
 import { RichTextEditor } from "@components/RichTextEditor";
 import { SearchSelect } from "@components/SearchSelect";
 
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 const now = new Date();
 

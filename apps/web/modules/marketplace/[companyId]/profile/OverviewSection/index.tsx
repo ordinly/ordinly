@@ -10,7 +10,7 @@ import { useSpring, animated } from "@react-spring/web";
 import {
   getCompanyProfile,
   updateCompanyProfile,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import { Button } from "@components/Button";
 import { RatingStars } from "@components/RatingStars";
@@ -70,7 +70,7 @@ const Overview = ({ onOpenMustBeLoggedInModal }) => {
   const updateProfile = async () => {
     if (router?.query?.companyId) {
       const { profile } = await getCompanyProfile({
-        companyId: router?.query?.companyId,
+        companyId: router?.query?.companyId as string,
       });
 
       setProfile(profile);

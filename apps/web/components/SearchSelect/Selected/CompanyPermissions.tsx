@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getCompanyProjectMinimumPermissions } from "@ordinly/api-abstraction/companies";
+import { getCompanyProjectMinimumPermissions } from "@ordinly/api-abstraction";
 
 import { ProfilePicture } from "@components/ProfilePicture";
 import { PermissionsInput } from "@components/PermissionsInput";
@@ -12,8 +12,9 @@ const CompanyPermissions = ({ companyId, name, onChange }) => {
 
   useEffect(() => {
     (async () => {
-      const { permissions: newPermissions } =
-        await getCompanyProjectMinimumPermissions();
+      const {
+        permissions: newPermissions,
+      } = await getCompanyProjectMinimumPermissions();
 
       setPermissions(newPermissions);
     })();

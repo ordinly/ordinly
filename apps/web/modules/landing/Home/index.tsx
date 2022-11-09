@@ -9,7 +9,7 @@ import Login from "./Login";
 
 import UserContext from "@contexts/UserContext";
 
-import { persistentLogin } from "@ordinly/api-abstraction/users";
+import { persistentLogin } from "@ordinly/api-abstraction";
 
 import styles from "./Home.module.css";
 

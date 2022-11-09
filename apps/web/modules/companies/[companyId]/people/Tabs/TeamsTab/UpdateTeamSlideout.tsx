@@ -2,7 +2,7 @@ import { useContext, useEffect, useState, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { getCompanyWorkers } from "@ordinly/api-abstraction/companies";
+import { getCompanyWorkers } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 import UserContext from "@contexts/UserContext";
@@ -20,7 +20,7 @@ import {
   updateTeam,
   removeTeam,
   getCompanyTeam,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import styles from "./UpdateTeamSlideout.module.css";
 
@@ -40,8 +40,8 @@ const UpdateTeamSlideout = ({ onSubmit: onSubmitProp }) => {
     if (router.query["team-id"]) {
       (async () => {
         const { team: fetchedTeam } = await getCompanyTeam({
-          teamId: router.query["team-id"],
-          companyId: router.query["companyId"],
+          teamId: router.query["team-id"] as string,
+          companyId: router.query["companyId"] as string,
         });
 
         setTeam(fetchedTeam);

@@ -1,3 +1,3 @@
-import type { Role } from "@ordinly/api-abstraction/companies/getCompany";
+import type { Role } from "@ordinly/api-abstraction";
 
 export type RoleTileProps = Role & { onClick: () => void };

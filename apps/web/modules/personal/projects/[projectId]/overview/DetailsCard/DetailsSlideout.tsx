@@ -2,7 +2,7 @@ import { useContext, useMemo, useState, useEffect } from "react";
 
 import { useRouter } from "next/router";
 
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import { Slideout } from "@components/Slideout";
 import { Form } from "@components/Form";
@@ -18,7 +18,7 @@ import {
 import ProjectContext from "@contexts/ProjectContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateUserProjectDetails } from "@ordinly/api-abstraction/users";
+import { updateUserProjectDetails } from "@ordinly/api-abstraction";
 
 import DeleteProjectModal from "./DeleteProjectModal";
 

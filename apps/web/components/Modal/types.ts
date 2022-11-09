@@ -8,4 +8,5 @@ export type ModalProps = {
   id: string;
   closeOnBackdropClick?: boolean;
   actions?: ButtonProps[];
+  closeText?: string;
 };

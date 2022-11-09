@@ -16,15 +16,8 @@ import { Input } from "@components/Input";
 import { Select } from "@components/Select";
 import { Checkbox } from "@components/Checkbox";
 
-import {
-  getCountries,
-  getRegions,
-  getCities,
-} from "@ordinly/api-abstraction/location";
-import {
-  getProjectQuote,
-  updateQuote,
-} from "@ordinly/api-abstraction/companies";
+import { getCountries, getRegions, getCities } from "@ordinly/api-abstraction";
+import { getProjectQuote, updateQuote } from "@ordinly/api-abstraction";
 
 import { required } from "@components/Form/validation";
 

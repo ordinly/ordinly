@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import { useRouter } from "next/router";
 
-import { getCompanyClientContacts } from "@ordinly/api-abstraction/companies";
+import { getCompanyClientContacts } from "@ordinly/api-abstraction";
 
 import { ContactTile } from "@components/Tile";
 
@@ -19,7 +19,7 @@ import ClientWrapper from "@modules/companies/[companyId]/clients/[clientId]/Cli
 import AddNewContactSlideout from "@modules/companies/[companyId]/clients/[clientId]/contacts/AddNewContactSlideout";
 import UpdateContactSlideout from "@modules/companies/[companyId]/clients/[clientId]/contacts/UpdateContactSlideout";
 
-import type { ContactType } from "@ordinly/api-abstraction/companies";
+import type { ContactType } from "@ordinly/api-abstraction";
 
 const columns = [
   {

@@ -2,7 +2,7 @@ import { useContext, useCallback } from "react";
 
 import { useRouter } from "next/router";
 
-import { getCompanyClients } from "@ordinly/api-abstraction/companies";
+import { getCompanyClients } from "@ordinly/api-abstraction";
 
 import { PageContent } from "@components/Layout";
 import { TableCell } from "@components/Table";
@@ -15,7 +15,7 @@ import CompanyWrapper from "@modules/companies/[companyId]/CompanyWrapper";
 
 import AddNewClientSlideout from "@modules/companies/[companyId]/clients/AddNewClientSlideout";
 
-import type { Client } from "@ordinly/api-abstraction/companies";
+import type { Client } from "@ordinly/api-abstraction";
 
 import type { ButtonProps } from "@components/Button";
 

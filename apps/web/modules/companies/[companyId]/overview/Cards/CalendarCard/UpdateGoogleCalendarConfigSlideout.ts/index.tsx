@@ -13,7 +13,7 @@ import NotificationContext from "@contexts/NotificationContext";
 import {
   getGoogleCalendars,
   updateGoogleCalendarConfig,
-} from "@ordinly/api-abstraction/users";
+} from "@ordinly/api-abstraction";
 
 import styles from "./UpdateGoogleCalendarConfigSlideout.module.css";
 

@@ -3,8 +3,8 @@ import { useContext, useCallback, useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { getCompanyProjectTasks } from "@ordinly/api-abstraction/companies";
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getCompanyProjectTasks } from "@ordinly/api-abstraction";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 import formatDate from "@util/formatDate";
 
@@ -25,7 +25,7 @@ import { Status } from "@components/Status";
 import AddTaskSlideout from "@modules/companies/[companyId]/projects/[projectId]/tasks/AddNewTaskSlideout";
 import UpdateTaskSlideout from "@modules/companies/[companyId]/projects/[projectId]/tasks/UpdateTaskSlideout";
 
-import type { Task } from "@ordinly/api-abstraction/companies";
+import type { Task } from "@ordinly/api-abstraction";
 
 const Wrapped = () => (
   <CompanyProjectWrapper>

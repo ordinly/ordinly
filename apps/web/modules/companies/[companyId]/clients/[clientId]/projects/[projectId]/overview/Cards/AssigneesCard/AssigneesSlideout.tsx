@@ -20,7 +20,7 @@ import { Permissions } from "@components/Permissions";
 
 import { required } from "@components/Form/validation";
 
-import { updateProjectAssignees } from "@ordinly/api-abstraction/companies";
+import { updateProjectAssignees } from "@ordinly/api-abstraction";
 
 import styles from "./AssigneesCard.module.css";
 

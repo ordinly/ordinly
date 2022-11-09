@@ -11,7 +11,7 @@ import {
   isEndDateLessThanStartDate,
 } from "@components/Form/validation";
 
-import { getPriorities, getStatuses } from "@ordinly/api-abstraction/projects";
+import { getPriorities, getStatuses } from "@ordinly/api-abstraction";
 
 const now = new Date();
 

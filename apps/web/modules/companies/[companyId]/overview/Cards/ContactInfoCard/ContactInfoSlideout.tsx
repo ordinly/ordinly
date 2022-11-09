@@ -12,7 +12,7 @@ import { InputList } from "@components/List";
 import CompanyContext from "@contexts/CompanyContext";
 import NotificationContext from "@contexts/NotificationContext";
 
-import { updateCompanyContactInfo } from "@ordinly/api-abstraction/companies";
+import { updateCompanyContactInfo } from "@ordinly/api-abstraction";
 import { isEmail, isPhoneNumber } from "@components/Form/validation";
 import { phoneMask, phoneUnmask } from "@util/masks";
 

@@ -17,7 +17,7 @@ import {
   getCompanyReview,
   updateCompanyReview,
   deleteCompanyReview,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 const UpdateReviewSlideout = ({ onClose: onCloseProp }) => {
   const [review, setReview] = useState<any>();
@@ -29,8 +29,8 @@ const UpdateReviewSlideout = ({ onClose: onCloseProp }) => {
   useEffect(() => {
     (async () => {
       const { review: newReview } = await getCompanyReview({
-        reviewId: router.query["review-id"],
-        companyId: router.query["companyId"],
+        reviewId: router.query["review-id"] as string,
+        companyId: router.query["companyId"] as string,
       });
 
       setReview(newReview);

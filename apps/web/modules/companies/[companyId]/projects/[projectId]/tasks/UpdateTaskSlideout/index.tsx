@@ -8,7 +8,7 @@ import {
   updateCompanyProjectTaskDetails,
   deleteCompanyProjectTask,
   getCompanyProjectTask,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import NotificationContext from "@contexts/NotificationContext";
 import ProjectContext from "@contexts/ProjectContext";

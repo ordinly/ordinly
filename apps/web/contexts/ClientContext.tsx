@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 
 import NotificationContext from "@contexts/NotificationContext";
 
-import { getClient } from "@ordinly/api-abstraction/companies";
+import { getClient } from "@ordinly/api-abstraction";
 
-import type { Client } from "@ordinly/api-abstraction/companies";
+import type { Client } from "@ordinly/api-abstraction";
 
 const ClientContext = createContext<{
   client: any;
@@ -26,8 +26,8 @@ export const ClientProvider = ({ children }) => {
     try {
       if (router.query.companyId && router.query.clientId) {
         const response = await getClient({
-          companyId: router.query.companyId,
-          clientId: router.query.clientId,
+          companyId: router.query.companyId as string,
+          clientId: router.query.clientId as string,
         });
 
         if ("client" in response) {

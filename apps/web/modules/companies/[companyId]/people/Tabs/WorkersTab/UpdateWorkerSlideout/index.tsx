@@ -19,7 +19,7 @@ import {
   updateWorker,
   getCompanyRoles,
   getCompanyWorker,
-} from "@ordinly/api-abstraction/companies";
+} from "@ordinly/api-abstraction";
 
 import LeaveCompanyModal from "./LeaveCompanyModal";
 import RemoveWorkerModal from "./RemoveWorkerModal";

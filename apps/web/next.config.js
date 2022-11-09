@@ -1,17 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const withTM = require("next-transpile-modules")(["@ordinly/api-abstraction"]);
-
-module.exports = withTM({
-  webpackDevMiddleware: (config) => {
-    config.watchOptions = {
-      poll: 1000,
-      aggregateTimeout: 300,
-    };
-
-    return config;
-  },
-
+module.exports = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
@@ -22,4 +11,4 @@ module.exports = withTM({
   },
 
   reactStrictMode: false,
-});
+};

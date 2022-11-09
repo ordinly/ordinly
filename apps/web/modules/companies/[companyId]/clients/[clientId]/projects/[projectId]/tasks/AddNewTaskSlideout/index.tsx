@@ -11,7 +11,7 @@ import NotificationContext from "@contexts/NotificationContext";
 import { Form } from "@components/Form";
 import { Slideout } from "@components/Slideout";
 
-import { addTask } from "@ordinly/api-abstraction/companies";
+import { addTask } from "@ordinly/api-abstraction";
 
 import GeneralDetailsStep from "./steps/GeneralDetails";
 import SubtasksStep from "./steps/Subtasks";

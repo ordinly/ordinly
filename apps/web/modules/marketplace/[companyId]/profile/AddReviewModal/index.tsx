@@ -13,7 +13,7 @@ import { Input } from "@components/Input";
 
 import { required } from "@components/Form/validation";
 
-import { reviewCompany } from "@ordinly/api-abstraction/companies";
+import { reviewCompany } from "@ordinly/api-abstraction";
 
 const AddReviewSlideout = ({ onClose: onCloseProp }) => {
   const { notification } = useContext(NotificationContext);

@@ -15,7 +15,7 @@ import {
   getGoogleCalendars,
   updateGoogleCalendarConfig,
   connectGoogleAccount,
-} from "@ordinly/api-abstraction/users";
+} from "@ordinly/api-abstraction";
 
 import styles from "./UpdateGoogleCalendarConfigSlideout.module.css";
 
@@ -96,8 +96,9 @@ const UpdateGoogleCalendarConfigSlideout = () => {
             (async () => {
               try {
                 if (user) {
-                  const { calendars: newCalendars } =
-                    await getGoogleCalendars();
+                  const {
+                    calendars: newCalendars,
+                  } = await getGoogleCalendars();
 
                   setCalendars(newCalendars);
                 }

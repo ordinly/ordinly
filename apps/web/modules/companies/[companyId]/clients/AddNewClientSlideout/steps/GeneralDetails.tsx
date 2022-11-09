@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { useRouter } from "next/router";
 
-import { searchCompanies } from "@ordinly/api-abstraction/companies";
+import { searchCompanies } from "@ordinly/api-abstraction";
 
 import CompanyContext from "@contexts/CompanyContext";
 

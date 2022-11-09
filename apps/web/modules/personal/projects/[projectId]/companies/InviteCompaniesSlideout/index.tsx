@@ -2,8 +2,8 @@ import { useContext } from "react";
 
 import { useRouter } from "next/router";
 
-import { searchCompanies } from "@ordinly/api-abstraction/companies";
-import { inviteCompaniesToPersonalProject } from "@ordinly/api-abstraction/users";
+import { searchCompanies } from "@ordinly/api-abstraction";
+import { inviteCompaniesToPersonalProject } from "@ordinly/api-abstraction";
 
 import ProjectContext from "@contexts/ProjectContext";
 import NotificationContext from "@contexts/NotificationContext";
