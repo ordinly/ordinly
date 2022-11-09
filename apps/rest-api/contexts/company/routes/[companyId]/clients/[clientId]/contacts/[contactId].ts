@@ -24,7 +24,7 @@ router
       },
     }),
     parseFormDataToJSON,
-    async (req, res) => {
+    async (req: any, res) => {
       try {
         const {
           params: { companyId, clientId, contactId },
@@ -56,7 +56,7 @@ router
       }
     }
   )
-  .delete(async (req, res) => {
+  .delete(async (req: any, res) => {
     try {
       const {
         params: { companyId, clientId, contactId },

@@ -9,7 +9,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .put(async (req, res) => {
+  .put(async (req: any, res) => {
     try {
       const {
         params: { invitationId, companyId, projectId },
@@ -32,7 +32,7 @@ router
       res.status(status).send({ error });
     }
   })
-  .delete(async (req, res) => {
+  .delete(async (req: any, res) => {
     try {
       const {
         params: { invitationId, projectId, companyId },

@@ -8,7 +8,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         params: { companyId },
@@ -67,7 +67,7 @@ router
       }
     }
   )
-  .delete(async (req, res) => {
+  .delete(async (req: any, res) => {
     try {
       const {
         params: { companyId },

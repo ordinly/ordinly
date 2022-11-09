@@ -21,7 +21,7 @@ router.route("/").put(
     },
   }),
   parseFormDataToJSON,
-  async (req, res) => {
+  async (req: any, res) => {
     try {
       const {
         body: { name },

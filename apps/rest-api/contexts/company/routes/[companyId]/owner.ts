@@ -4,7 +4,7 @@ import { updateCompanyOwner } from "../../actions";
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").put(async (req, res) => {
+router.route("/").put(async (req: any, res) => {
   try {
     const {
       params: { companyId },

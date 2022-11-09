@@ -9,7 +9,7 @@ config();
 const router = express.Router({ mergeParams: true });
 
 //@ts-ignore - Req is not used, and doesn't need to be
-router.route("/").put(async (req, res) => {
+router.route("/").put(async (req: any, res) => {
   try {
     const {
       params: { companyId },

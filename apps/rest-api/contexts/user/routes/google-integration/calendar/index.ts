@@ -9,7 +9,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         //@ts-ignore
@@ -28,7 +28,7 @@ router
       res.status(status).send({ error });
     }
   })
-  .put(async (req, res) => {
+  .put(async (req: any, res) => {
     try {
       const {
         //@ts-ignore

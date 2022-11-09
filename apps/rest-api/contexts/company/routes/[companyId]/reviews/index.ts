@@ -4,7 +4,7 @@ import { reviewCompany } from "@contexts/company/actions";
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").post(async (req, res) => {
+router.route("/").post(async (req: any, res) => {
   try {
     const {
       //@ts-ignore

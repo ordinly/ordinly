@@ -15,7 +15,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         params: { projectId, companyId },
@@ -57,7 +57,7 @@ router
       },
     }),
     parseFormDataToJSON,
-    async (req, res) => {
+    async (req: any, res) => {
       try {
         const {
           params: { projectId, taskId, companyId },

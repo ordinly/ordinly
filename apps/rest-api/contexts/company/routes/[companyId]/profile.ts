@@ -9,7 +9,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .put(async (req, res) => {
+  .put(async (req: any, res) => {
     try {
       const {
         params: { companyId },
@@ -33,7 +33,7 @@ router
       res.end(null);
     }
   })
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         params: { companyId },

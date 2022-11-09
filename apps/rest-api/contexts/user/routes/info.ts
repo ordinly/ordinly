@@ -4,7 +4,7 @@ import { getUserById } from "@contexts/user/actions";
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").get(async (req, res) => {
+router.route("/").get(async (req: any, res) => {
   try {
     const {
       //@ts-ignore

@@ -6,7 +6,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         query = { page: 1, pageSize: 15 },
@@ -29,7 +29,7 @@ router
       res.status(status).send({ error });
     }
   })
-  .post(async (req, res) => {
+  .post(async (req: any, res) => {
     try {
       const {
         //@ts-ignore

@@ -3,7 +3,7 @@ import express from "express";
 const router = express.Router({ mergeParams: true });
 
 //@ts-ignore
-router.route("/").post(async (req, res) => {
+router.route("/").post(async (req: any, res) => {
   try {
     res.clearCookie("auth");
 

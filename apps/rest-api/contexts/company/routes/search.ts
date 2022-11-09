@@ -4,7 +4,7 @@ import { searchCompanies } from "@contexts/company/actions";
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").get(async (req, res) => {
+router.route("/").get(async (req: any, res) => {
   try {
     const {
       query = { page: 1, pageSize: 15, searchTerm: "", ids: "", exclude: "" },

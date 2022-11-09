@@ -4,7 +4,7 @@ import { getTags } from "@contexts/company/actions";
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").get(async (req, res) => {
+router.route("/").get(async (req: any, res) => {
   try {
     const {} = req;
 

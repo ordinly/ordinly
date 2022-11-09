@@ -10,7 +10,7 @@ const router = express.Router({ mergeParams: true });
 
 router
   .route("/")
-  .put(async (req, res) => {
+  .put(async (req: any, res) => {
     try {
       const {
         //@ts-ignore
@@ -35,7 +35,7 @@ router
       res.end(null);
     }
   })
-  .get(async (req, res) => {
+  .get(async (req: any, res) => {
     try {
       const {
         //@ts-ignore
@@ -56,7 +56,7 @@ router
       res.end(null);
     }
   })
-  .delete(async (req, res) => {
+  .delete(async (req: any, res) => {
     try {
       const {
         //@ts-ignore
