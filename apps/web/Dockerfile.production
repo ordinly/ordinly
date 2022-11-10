@@ -10,8 +10,7 @@ COPY .npmrc .npmrc
 
 COPY package*.json ./
 
-RUN echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" > /web/.npmrc && \
-    npm install && \
+RUN npm install && \
     rm -f /web/.npmrc
 
 COPY . /web
