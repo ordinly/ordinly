@@ -26,7 +26,7 @@ services:
       - rest-api
 
   web:
-    image: registry.digitalocean.com/ordinly/web:latest
+    image: ghcr.io/ordinly/web:master
     command: "npm run start"
     restart: always
     networks:
@@ -35,7 +35,7 @@ services:
       - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_API_KEY}
 
   rest-api:
-    image: registry.digitalocean.com/ordinly/rest-api:latest
+    image: ghcr.io/ordinly/rest-api:master
     command: "npm run start"
     restart: always
     networks:
