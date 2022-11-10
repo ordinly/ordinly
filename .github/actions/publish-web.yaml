@@ -1,12 +1,8 @@
 name: Create and publish web Docker image
 
 on:
-  pull_request:
+  push:
     branches: ["master"]
-    types:
-      - closed
-    paths:
-      - apps/web/**
 
 env:
   REGISTRY: ghcr.io
@@ -14,7 +10,6 @@ env:
 
 jobs:
   build-and-push-image:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: read
