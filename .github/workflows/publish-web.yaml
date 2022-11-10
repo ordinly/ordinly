@@ -3,6 +3,7 @@ name: Create and publish web Docker image
 on:
   push:
     branches: ["master"]
+    paths: apps/web/**
 
 env:
   REGISTRY: ghcr.io
