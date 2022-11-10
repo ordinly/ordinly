@@ -1,0 +1,118 @@
+version: "3.8"
+
+networks:
+  ordinly:
+
+services:
+  reverse-proxy:
+    image: nginx:mainline-alpine
+    volumes:
+      - ../common/config/nginx/nginx.${NODE_ENV}.conf:/etc/nginx/nginx.conf
+      - ../common/config/ssl:/etc/nginx/ssl
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - ordinly
+    depends_on:
+      - web
+      - rest-api
+
+  web:
+    build:
+      context: "../apps/web"
+      dockerfile: "Dockerfile.${NODE_ENV}"
+      args:
+        NPM_TOKEN: ${NPM_TOKEN}
+    volumes:
+      - ../apps/web/assets:/web/assets
+      - ../apps/web/components:/web/components
+      - ../apps/web/contexts:/web/contexts
+      - ../apps/web/guards:/web/guards
+      - ../apps/web/hooks:/web/hooks
+      - ../apps/web/modules:/web/modules
+      - ../apps/web/pages:/web/pages
+      - ../apps/web/public:/web/public
+      - ../apps/web/theme:/web/theme
+      - ../apps/web/util:/web/util
+      - ../apps/web/.next:/web/.next
+    networks:
+      - ordinly
+    environment:
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_API_KEY}
+      - NEXT_PUBLIC_NODE_ENV=${NODE_ENV}
+
+  rest-api:
+    build:
+      context: "../apps/rest-api"
+      dockerfile: "Dockerfile.${NODE_ENV}"
+    volumes:
+      - ../apps/rest-api/contexts:/rest-api/contexts
+      - ../apps/rest-api/db:/rest-api/db
+      - ../apps/rest-api/middleware:/rest-api/middleware
+      - ../apps/rest-api/services:/rest-api/services
+      - ../apps/rest-api/static:/rest-api/static
+      - ../apps/rest-api/util:/rest-api/util
+    restart: always
+    networks:
+      - ordinly
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${REST_API_PORT}
+      - REST_API_DB_URL=${REST_API_DB_URL}
+      - FILES_API_DB_URL=${FILES_API_DB_URL}
+      - SCHEDULER_API_DB_URL=${SCHEDULER_API_DB_URL}
+      - COOKIE_SECRET=${COOKIE_SECRET}
+      - JWT_PASSPHRASE=${JWT_PASSPHRASE}
+      - SENDGRID_EMAIL_ADDRESS=${SENDGRID_EMAIL_ADDRESS}
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - STRIPE_PUBLISHABLE_API_KEY=${STRIPE_PUBLISHABLE_API_KEY}
+      - STRIPE_SECRET_API_KEY=${STRIPE_SECRET_API_KEY}
+      - OBJECT_STORAGE_URL=${OBJECT_STORAGE_URL}
+      - OBJECT_STORAGE_ACCESS_KEY=${OBJECT_STORAGE_ACCESS_KEY}
+      - OBJECT_STORAGE_SECRET_KEY=${OBJECT_STORAGE_SECRET_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+    depends_on:
+      - mongodb-rest-api
+
+  mongodb-rest-api:
+    image: mongo:5.0.0
+    command: mongod --port 27018
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+    volumes:
+      - ../databases/mongodb-rest-api/mongodb:/home/mongodb
+      - ../databases/mongodb-rest-api/database:/data/db
+    ports:
+      - 27018:27017
+    restart: always
+    networks:
+      - ordinly
+
+  minio:
+    image: minio/minio:latest
+    volumes:
+      - ../databases/minio/data:/data
+    ports:
+      - "9001:9000"
+    environment:
+      - MINIO_ROOT_USER=${OBJECT_STORAGE_ACCESS_KEY}
+      - MINIO_ROOT_PASSWORD=${OBJECT_STORAGE_SECRET_KEY}
+    command: server /data
+    restart: always
+    networks:
+      - ordinly
+
+  stripe-cli:
+    image: stripe/stripe-cli
+    container_name: stripe-cli
+    networks:
+      - ordinly
+    environment:
+      - STRIPE_API_KEY=${STRIPE_SECRET_API_KEY}
+      - STRIPE_DEVICE_NAME=development-server
+    command: listen --forward-to rest-api:8080/api/stripe/subscription/webhook

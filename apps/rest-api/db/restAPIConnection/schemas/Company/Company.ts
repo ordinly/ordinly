@@ -188,8 +188,10 @@ const companySchema = new Schema<CompanyDocument>(
   { collection: "Companies" }
 );
 
+//@ts-ignore
 restAPIConnection.model("Company", companySchema);
 
+//@ts-ignore
 export default restAPIConnection.model<CompanyDocument, CompanyModel>(
   "Company"
 );

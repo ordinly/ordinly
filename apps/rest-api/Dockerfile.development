@@ -17,6 +17,10 @@ RUN npm install
 # Run the app
 FROM deps AS run
 
-COPY . ./
+WORKDIR /rest-api
+
+COPY index.ts ./
+COPY nodemon.json ./
+COPY tsconfig.json ./
 
 CMD npm run dev

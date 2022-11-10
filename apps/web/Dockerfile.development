@@ -21,6 +21,11 @@ RUN rm -f .npmrc
 # Run the app
 FROM deps AS run
 
-COPY . ./
+WORKDIR /web
+
+COPY next.config.js ./
+COPY next-env.d.ts ./
+COPY tsconfig.json ./
+COPY tsconfig.tsbuildinfo ./
 
 CMD npm run dev

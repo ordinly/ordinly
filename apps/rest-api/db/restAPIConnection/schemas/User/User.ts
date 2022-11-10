@@ -20,6 +20,8 @@ const userSchema = new Schema<UserDocument>(
   { collection: "Users" }
 );
 
+//@ts-ignore
 restAPIConnection.model("User", userSchema);
 
+//@ts-ignore
 export default restAPIConnection.model<UserDocument, UserModel>("User");

@@ -75,3 +75,4 @@ common/autoinstallers/*/.npmrc
 common/config/env
 common/config/rush/.npmrc
 common/config/rush/.npmrc-publish
+databases

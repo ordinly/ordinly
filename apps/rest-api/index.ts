@@ -78,7 +78,7 @@ restAPIConnection
 
       glob
         .sync(`**/routes/**/*${extension}`, { cwd: ENDPOINT_DIR })
-        .forEach(async (fileRoute) => {
+        .forEach((fileRoute) => {
           let endpoint = fileRoute.replace("/routes", "");
 
           endpoint = endpoint.split("/").reduce((total, current) => {
@@ -105,7 +105,7 @@ restAPIConnection
           }: {
             router: any;
             middleware: RequestHandler[];
-          } = await import(path.resolve(ENDPOINT_DIR, fileRoute));
+          } = require(path.resolve(ENDPOINT_DIR, fileRoute));
 
           // Prints the endpoints and their respective REST methods (GET, PUT, POST, DELETE)
           console.log(
