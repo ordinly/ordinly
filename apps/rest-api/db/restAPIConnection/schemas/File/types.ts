@@ -11,6 +11,8 @@ export interface FileType {
   createdBy: string;
 }
 
+//@ts-ignore
 export interface FileDocument extends Document, FileType {}
 
+//@ts-ignore
 export interface FileModel extends Model<FileDocument> {}

@@ -33,6 +33,8 @@ export interface UserType {
   };
 }
 
+//@ts-ignore
 export interface UserDocument extends Document, UserType {}
 
+//@ts-ignore
 export interface UserModel extends Model<UserDocument> {}

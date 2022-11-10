@@ -28,6 +28,8 @@ export type InvoiceType = DocumentType & {
   }[];
 };
 
+//@ts-ignore
 export interface InvoiceDocument extends Document, InvoiceType {}
 
+//@ts-ignore
 export interface InvoiceModel extends Model<InvoiceDocument> {}

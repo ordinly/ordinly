@@ -55,8 +55,10 @@ const invitationSchema = new Schema<InvitationDocument>(
   }
 );
 
+//@ts-ignore
 restAPIConnection.model("Invitation", invitationSchema);
 
+//@ts-ignore
 export default restAPIConnection.model<InvitationDocument, InvitationModel>(
   "Invitation"
 );

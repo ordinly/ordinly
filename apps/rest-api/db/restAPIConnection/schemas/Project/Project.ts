@@ -65,8 +65,10 @@ const projectSchema = new Schema<ProjectDocument>(
   { collection: "Projects", timestamps: true }
 );
 
+//@ts-ignore
 restAPIConnection.model("Project", projectSchema);
 
+//@ts-ignore
 export default restAPIConnection.model<ProjectDocument, ProjectModel>(
   "Project"
 );

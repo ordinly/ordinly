@@ -21,6 +21,8 @@ export type DocumentType = {
   deletedBy: string;
 };
 
+//@ts-ignore
 export interface DocumentDocument extends Document, DocumentType {}
 
+//@ts-ignore
 export interface DocumentModel extends Model<DocumentDocument> {}

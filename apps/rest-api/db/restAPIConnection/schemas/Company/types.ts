@@ -175,6 +175,8 @@ export interface CompanyType {
   tags: string[];
 }
 
+//@ts-ignore
 export interface CompanyDocument extends Document, CompanyType {}
 
+//@ts-ignore
 export interface CompanyModel extends Model<CompanyDocument> {}

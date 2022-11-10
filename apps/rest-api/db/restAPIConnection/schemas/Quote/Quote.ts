@@ -28,6 +28,7 @@ const quoteSchema = new Schema<QuoteDocument>({
   ],
 });
 
+//@ts-ignore
 export default Document.discriminator<QuoteDocument, QuoteModel>(
   "Quote",
   quoteSchema

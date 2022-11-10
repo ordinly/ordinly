@@ -26,6 +26,8 @@ const reviewSchema = new Schema<ReviewDocument>(
   }
 );
 
+//@ts-ignore
 restAPIConnection.model("Review", reviewSchema);
 
+//@ts-ignore
 export default restAPIConnection.model<ReviewDocument, ReviewModel>("Review");

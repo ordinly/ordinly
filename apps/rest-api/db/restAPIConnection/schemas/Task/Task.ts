@@ -50,6 +50,8 @@ const taskSchema = new Schema<TaskDocument>(
   { collection: "Tasks", timestamps: true }
 );
 
+//@ts-ignore
 restAPIConnection.model("Task", taskSchema);
 
+//@ts-ignore
 export default restAPIConnection.model<TaskDocument, TaskModel>("Task");
