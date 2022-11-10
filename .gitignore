@@ -76,3 +76,5 @@ common/config/env
 common/config/rush/.npmrc
 common/config/rush/.npmrc-publish
 databases
+
+package-lock.json

@@ -1,0 +1,59 @@
+version: "3.8"
+
+networks:
+  ordinly:
+
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30 web rest-api
+
+  reverse-proxy:
+    image: nginx:mainline-alpine
+    volumes:
+      - ../common/config/nginx/nginx.${NODE_ENV}.conf:/etc/nginx/nginx.conf
+      - ../common/config/ssl:/etc/nginx/ssl
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - ordinly
+    depends_on:
+      - web
+      - rest-api
+
+  web:
+    image: registry.digitalocean.com/ordinly/web:latest
+    command: "npm run start"
+    restart: always
+    networks:
+      - ordinly
+    environment:
+      - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_API_KEY}
+
+  rest-api:
+    image: registry.digitalocean.com/ordinly/rest-api:latest
+    command: "npm run start"
+    restart: always
+    networks:
+      - ordinly
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${REST_API_PORT}
+      - REST_API_DB_URL=${REST_API_DB_URL}
+      - FILES_API_DB_URL=${FILES_API_DB_URL}
+      - SCHEDULER_API_DB_URL=${SCHEDULER_API_DB_URL}
+      - COOKIE_SECRET=${COOKIE_SECRET}
+      - JWT_PASSPHRASE=${JWT_PASSPHRASE}
+      - SENDGRID_EMAIL_ADDRESS=${SENDGRID_EMAIL_ADDRESS}
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - STRIPE_PUBLISHABLE_API_KEY=${STRIPE_PUBLISHABLE_API_KEY}
+      - STRIPE_SECRET_API_KEY=${STRIPE_SECRET_API_KEY}
+      - OBJECT_STORAGE_URL=${OBJECT_STORAGE_URL}
+      - OBJECT_STORAGE_ACCESS_KEY=${OBJECT_STORAGE_ACCESS_KEY}
+      - OBJECT_STORAGE_SECRET_KEY=${OBJECT_STORAGE_SECRET_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}

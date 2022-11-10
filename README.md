@@ -53,7 +53,7 @@ OBJECT_STORAGE_ACCESS_KEY=admin
 OBJECT_STORAGE_SECRET_KEY=password
 ```
 
-- /common/config/temp/.npmrc
+- /common/config/rush/.npmrc & /common/config/rush/.npmrc-publish
 
 ```
 @ordinly:registry=https://npm.pkg.github.com
@@ -90,3 +90,16 @@ registry=https://registry.npmjs.org/
    ```shell
    $ npm run dev
    ```
+
+## Commands
+
+The commands to interact with the application are for various technologies (docker/rush/openssl/npm) so we've built a simple abstraction through the package.json scripts. The below commands can be run by typing `npm run [[COMMAND]]` in a terminal at the root level of the project.
+
+`ssl`: Generates local SSL certificates
+`dev`: Starts the dev server
+`end`: Kills the local app servers
+`build`: Builds the application
+`update`: Updates the monorepo
+`change`: Generates changelogs and bumps versions
+`publish`: Publishes a new version of the npm packages
+`install`: Installs dependencies for all projects. Not to be confused with `npm install` which only installs the dependencies of the folder in which it was run.

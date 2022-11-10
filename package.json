@@ -3,7 +3,14 @@
   "version": "0.0.1",
   "description": "The monorepo containing the entirety of Ordinly",
   "scripts": {
-    "ssl": "openssl req -nodes -new -x509 -keyout ./common/config/ssl/ssl.key -out ./common/config/ssl/ssl.crt"
+    "ssl": "openssl req -nodes -new -x509 -keyout ./common/config/ssl/ssl.key -out ./common/config/ssl/ssl.crt",
+    "dev": "docker-compose --env-file ./common/config/env/.env.development -f ./docker/docker-compose.development.yaml up --build --force-recreate",
+    "end": "docker-compose down --remove-orphans",
+    "build": "rush build",
+    "update": "rush update",
+    "change": "rush change",
+    "publish": "rush publish",
+    "install": "rush install"
   },
   "repository": {
     "type": "git",
