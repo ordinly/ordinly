@@ -16,4 +16,6 @@ RUN rm -f .npmrc
 
 COPY . /web
 
+RUN npm run build
+
 CMD npm run start
