@@ -1,0 +1,31 @@
+version: "3.8"
+
+networks:
+  ordinly:
+
+volumes:
+  certbot-etc:
+  certbot-var:
+  web-root:
+
+services:
+  reverse-proxy:
+    image: nginx:mainline-alpine
+    volumes:
+      - ./config/nginx.certbot.conf:/etc/nginx/nginx.conf
+      - ./config/web-root:/var/www/html
+      - ./config/certbot-etc:/etc/letsencrypt
+      - ./config/certbot-var:/var/lib/letsencrypt
+    ports:
+      - 80:80
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./config/certbot-etc:/etc/letsencrypt
+      - ./config/certbot-var:/var/lib/letsencrypt
+      - ./config/web-root:/var/www/html
+    depends_on:
+      - reverse-proxy
+    command: certonly --webroot --webroot-path=/var/www/html --email seanallanmackay@gmail.com --agree-tos --no-eff-email --force-renewal -d ordinly.com  -d www.ordinly.com

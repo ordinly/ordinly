@@ -16,6 +16,9 @@ services:
     volumes:
       - ../common/config/nginx/nginx.${NODE_ENV}.conf:/etc/nginx/nginx.conf
       - ../common/config/ssl:/etc/nginx/ssl
+      - ../common/config/web-root:/var/www/html
+      - ../common/config/certbot-etc:/etc/letsencrypt
+      - ../common/config/certbot-var:/var/lib/letsencrypt
     ports:
       - 80:80
       - 443:443
