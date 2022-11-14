@@ -12,7 +12,7 @@ services:
   reverse-proxy:
     image: nginx:mainline-alpine
     volumes:
-      - ../common/config/nginx.certbot.conf:/etc/nginx/nginx.conf
+      - ../common/config/nginx/nginx.certbot.conf:/etc/nginx/nginx.conf
       - ../common/config/web-root:/var/www/html
       - ../common/config/certbot-etc:/etc/letsencrypt
       - ../common/config/certbot-var:/var/lib/letsencrypt
