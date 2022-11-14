@@ -7,7 +7,7 @@
     "dev": "docker-compose --env-file ./common/config/env/.env.development -f ./docker/docker-compose.development.yaml up --build --force-recreate",
     "start": "docker-compose --env-file ./common/config/env/.env.production -f ./docker/docker-compose.production.yaml up",
     "end": "docker-compose down --remove-orphans",
-    "certbot": "docker-compose -f docker-compose.certbot.yaml up --build",
+    "certbot": "docker-compose -f ./docker/docker-compose.certbot.yaml up --build",
     "build": "rush build",
     "update": "rush update",
     "change": "rush change",
