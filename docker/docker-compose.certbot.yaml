@@ -12,10 +12,10 @@ services:
   reverse-proxy:
     image: nginx:mainline-alpine
     volumes:
-      - ./config/nginx.certbot.conf:/etc/nginx/nginx.conf
-      - ./config/web-root:/var/www/html
-      - ./config/certbot-etc:/etc/letsencrypt
-      - ./config/certbot-var:/var/lib/letsencrypt
+      - ../common/config/nginx.certbot.conf:/etc/nginx/nginx.conf
+      - ../common/config/web-root:/var/www/html
+      - ../common/config/certbot-etc:/etc/letsencrypt
+      - ../common/config/certbot-var:/var/lib/letsencrypt
     ports:
       - 80:80
 
@@ -23,9 +23,9 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - ./config/certbot-etc:/etc/letsencrypt
-      - ./config/certbot-var:/var/lib/letsencrypt
-      - ./config/web-root:/var/www/html
+      - ../common/config/web-root:/var/www/html
+      - ../common/config/certbot-etc:/etc/letsencrypt
+      - ../common/config/certbot-var:/var/lib/letsencrypt
     depends_on:
       - reverse-proxy
     command: certonly --webroot --webroot-path=/var/www/html --email seanallanmackay@gmail.com --agree-tos --no-eff-email --force-renewal -d ordinly.com  -d www.ordinly.com
