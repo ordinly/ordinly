@@ -45,7 +45,7 @@ interface ExtendedSocket extends Socket {
 }
 
 restAPIConnection
-  .on("error", (error) => {
+  .on("error", (error: any) => {
     console.error(error);
   })
   .once("open", async () => {
@@ -78,7 +78,7 @@ restAPIConnection
 
       glob
         .sync(`**/routes/**/*${extension}`, { cwd: ENDPOINT_DIR })
-        .forEach((fileRoute) => {
+        .forEach(async (fileRoute) => {
           let endpoint = fileRoute.replace("/routes", "");
 
           endpoint = endpoint.split("/").reduce((total, current) => {
@@ -105,7 +105,7 @@ restAPIConnection
           }: {
             router: any;
             middleware: RequestHandler[];
-          } = require(path.resolve(ENDPOINT_DIR, fileRoute));
+          } = await import(path.resolve(ENDPOINT_DIR, fileRoute));
 
           // Prints the endpoints and their respective REST methods (GET, PUT, POST, DELETE)
           console.log(
@@ -116,7 +116,7 @@ restAPIConnection
             )}`
           );
 
-          if (nonLoggedInRoutes.find((regex) => regex.test(endpoint))) {
+          if (nonLoggedInRoutes.find((regex: any) => regex.test(endpoint))) {
             app.use(endpoint, [...middleware, socketMiddleware], router);
           } else {
             app.use(

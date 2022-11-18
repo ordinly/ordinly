@@ -10,8 +10,6 @@ router.route("/").post(async (req: any, res) => {
       body: { email, password, name },
     } = req;
 
-    console.log(email, password, name);
-
     const { status, message } = await signUp({
       email,
       name,

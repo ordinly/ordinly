@@ -19,8 +19,6 @@ FROM deps AS run
 
 WORKDIR /rest-api
 
-COPY index.ts ./
-COPY nodemon.json ./
 COPY tsconfig.json ./
 
 CMD npm run dev
