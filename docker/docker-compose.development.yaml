@@ -47,12 +47,7 @@ services:
       context: "../apps/rest-api"
       dockerfile: "Dockerfile.${NODE_ENV}"
     volumes:
-      - ../apps/rest-api/contexts:/rest-api/contexts
-      - ../apps/rest-api/db:/rest-api/db
-      - ../apps/rest-api/middleware:/rest-api/middleware
-      - ../apps/rest-api/services:/rest-api/services
-      - ../apps/rest-api/static:/rest-api/static
-      - ../apps/rest-api/util:/rest-api/util
+      - ../apps/rest-api/src:/rest-api/src
     restart: always
     networks:
       - ordinly

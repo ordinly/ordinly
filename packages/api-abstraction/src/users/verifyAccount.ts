@@ -7,7 +7,7 @@ export type VerifyAccountArgs = {
 export const verifyAccount = async ({ code }: VerifyAccountArgs) => {
   try {
     const response = await GET({
-      endpoint: `/api/user/verify-account${code}`,
+      endpoint: `/api/user/verify-account?code=${code}`,
     });
 
     return response;
