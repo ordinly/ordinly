@@ -79,7 +79,7 @@ const Login = () => {
                   <Button
                     onClick={onNavigateToSignUp}
                     variant="ghost"
-                    text="Go to sign up page"
+                    text="Sign up"
                   />
 
                   <Button text="Log in" onClick={handleSubmit} type="submit" />

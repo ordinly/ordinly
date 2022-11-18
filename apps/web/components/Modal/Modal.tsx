@@ -39,13 +39,21 @@ const Modal = ({
               <div className={styles.header}>
                 <h2 className={styles.title}>{title}</h2>
 
-                <CloseButton onClick={onClose} id={`${id}-close-button`} />
+                {onClose ? (
+                  <CloseButton onClick={onClose} id={`${id}-close-button`} />
+                ) : null}
               </div>
 
               {children}
 
               <div className={styles.actionsContainer}>
-                <Button text={closeText} variant="outline" onClick={onClose} />
+                {onClose ? (
+                  <Button
+                    text={closeText}
+                    variant="outline"
+                    onClick={onClose}
+                  />
+                ) : null}
 
                 {actions?.map((action, index) => (
                   <Button key={`${action.id}-${index}`} {...action} />

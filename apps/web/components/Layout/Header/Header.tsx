@@ -14,6 +14,7 @@ import styles from "./Header.module.css";
 
 import LoginModal from "./LoginModal";
 import SignUpModal from "./SignUpModal";
+import VerificationModal from "./VerificationModal";
 
 const Header = () => {
   const { user, setUser } = useContext(UserContext);
@@ -128,6 +129,7 @@ const Header = () => {
 
       <LoginModal />
       <SignUpModal />
+      <VerificationModal />
     </header>
   );
 };
