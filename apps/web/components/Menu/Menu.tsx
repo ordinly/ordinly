@@ -78,9 +78,16 @@ const Menu = ({
       .getElementById(mountId)
       .getBoundingClientRect();
 
-    const { top, left, right, bottom, width, height, x, y } = document
-      .getElementById(id)
-      .getBoundingClientRect();
+    const {
+      top,
+      left,
+      right,
+      bottom,
+      width,
+      height,
+      x,
+      y,
+    } = document.getElementById(id).getBoundingClientRect();
 
     const newMenuPosition = {
       top,
@@ -109,7 +116,7 @@ const Menu = ({
       }),
       width: fluid ? parentPosition.width : width,
     });
-  }, [mountId, id, position, align]);
+  }, [mountId, id, position, align, fluid]);
 
   const handleKeyPress = useCallback(
     ({ key }) => {
@@ -198,22 +205,26 @@ const Menu = ({
   }, []);
 
   return (
-    <Portal>
-      <div
-        id={id}
-        className={styles.menu}
-        style={menuPosition}
-        ref={ref}
-        onClick={() => {
-          if (closeOnClick) {
-            onClose();
-          }
-        }}
-        onKeyDown={handleKeyPress}
-      >
-        {children}
-      </div>
-    </Portal>
+    <>
+      <Portal>
+        <div id={id} ref={ref}>
+          {menuPosition ? (
+            <div
+              className={menuPosition ? styles.menu : undefined}
+              style={menuPosition ? menuPosition : undefined}
+              onClick={() => {
+                if (closeOnClick) {
+                  onClose();
+                }
+              }}
+              onKeyDown={handleKeyPress}
+            >
+              {children}
+            </div>
+          ) : null}
+        </div>
+      </Portal>
+    </>
   );
 };
 

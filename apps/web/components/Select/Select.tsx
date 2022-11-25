@@ -101,16 +101,17 @@ const Select = ({
           yOffset={menuOffset.y}
         >
           {options?.length ? (
-            options?.map(({ label, value }, index) => (
-              <Button
-                key={`${id}-option-${value}`}
-                id={`${id}-option-${value}`}
-                text={label}
-                variant="ghost"
-                onClick={() => onSelection(value)}
-                size="small"
-                align="center"
-              />
+            options?.map(({ label, value: optionValue }, index) => (
+              <p
+                className={`${styles.option} ${
+                  value === optionValue ? styles.active : ""
+                }`}
+                key={`${id}-option-${optionValue}`}
+                id={`${id}-option-${optionValue}`}
+                onClick={() => onSelection(optionValue)}
+              >
+                {label}
+              </p>
             ))
           ) : (
             <div className={styles.noItemsContainer}>

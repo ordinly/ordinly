@@ -2,8 +2,6 @@ import { useState, useRef } from "react";
 
 import { Icon } from "@components/Icon";
 
-import formatDate from "@util/formatDate";
-
 import styles from "./Input.module.css";
 
 import type { InputProps } from "./types";
@@ -41,10 +39,6 @@ const Input = ({
 
   const getValue = (value) => {
     let returnValue = value;
-
-    if (htmlType === "date" && !isNaN(Date.parse(returnValue))) {
-      returnValue = formatDate(returnValue as Date, "yyyy-MM-dd");
-    }
 
     if (mask) {
       returnValue = mask(returnValue);

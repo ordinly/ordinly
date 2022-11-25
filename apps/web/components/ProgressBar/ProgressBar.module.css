@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: var(--background-color-light);
+  background: var(--background-color);
   border: 6px solid var(--success-light);
   color: var(--success-light);
 }
@@ -41,7 +41,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--background-color-light);
+  background: var(--background-color);
   line-height: 44px;
   text-align: center;
   margin-top: 5.5px;

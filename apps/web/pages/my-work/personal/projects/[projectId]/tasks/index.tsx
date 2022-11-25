@@ -148,7 +148,7 @@ const Tasks = () => {
             text: project?.name,
             icon: "project",
             href: {
-              pathname: `/companies/[companyId]/clients/[clientId]/projects`,
+              pathname: `/my-work/personal/projects`,
               query: router.query,
             },
           },

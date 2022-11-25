@@ -4,7 +4,7 @@
 
 .tile {
   position: relative;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color);
   border-radius: var(--border-radius-medium);
   padding: var(--small-padding);
   cursor: pointer;
@@ -16,5 +16,5 @@
 }
 
 .tile:hover {
-  background-color: #eeeeee;
+  background-color: var(--background-color-light);
 }

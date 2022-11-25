@@ -2,7 +2,7 @@
   padding: var(--small-padding) var(--medium-padding);
   overflow: hidden;
   z-index: 1;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color);
   cursor: pointer;
 }
 

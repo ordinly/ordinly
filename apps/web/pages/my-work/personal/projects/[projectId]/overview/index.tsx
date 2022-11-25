@@ -1,13 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import Head from "next/head";
 import { useRouter } from "next/router";
+
+import { getUserProjectTaskAnalytics } from "@ordinly/api-abstraction";
 
 import ProjectContext from "@contexts/ProjectContext";
 
 import UserProjectWrapper from "@modules/personal/projects/[projectId]/UserProjectWrapper";
 
 import { PageContent } from "@components/Layout";
+import { PieChart } from "@components/PieChart";
 
 import DetailsCard from "@modules/personal/projects/[projectId]/overview/DetailsCard";
 import DetailsSlideout from "@modules/personal/projects/[projectId]/overview/DetailsCard/DetailsSlideout";
@@ -20,10 +23,25 @@ const Wrapped = () => (
   </UserProjectWrapper>
 );
 
+const statusColorMapping = {
+  Proposal: "#934df6",
+  "Not started": "#393939",
+  "On hold": "#d42828",
+  "In progress": "#0050f0",
+  Complete: "#088a3c",
+  Cancelled: "#941349",
+  Rejected: "#750606",
+  Pending: "#dbb118",
+  Active: "#088a3c",
+  None: "#393939",
+};
+
 const Overview = () => {
   const router = useRouter();
 
   const { project } = useContext(ProjectContext);
+
+  const [analytics, setAnalytics] = useState([]);
 
   const openDetailsSlideout = async () => {
     await router.replace({
@@ -35,6 +53,24 @@ const Overview = () => {
       },
     });
   };
+
+  useEffect(() => {
+    if (project) {
+      (async () => {
+        const { tasks } = await getUserProjectTaskAnalytics({
+          projectId: project._id,
+        });
+
+        setAnalytics(
+          tasks.map(({ _id: { status }, count }) => ({
+            id: status ? status : "None",
+            value: count,
+            color: statusColorMapping[status],
+          }))
+        );
+      })();
+    }
+  }, [project]);
 
   return (
     <>
@@ -69,7 +105,21 @@ const Overview = () => {
         ]}
       >
         <div className={styles.container}>
-          <DetailsCard />
+          <div className={styles.tile}>
+            <h4>Details</h4>
+
+            <DetailsCard />
+          </div>
+
+          <div className={styles.tile}>
+            <h4>Tasks by status</h4>
+
+            <PieChart data={analytics} />
+          </div>
+
+          <div className={styles.tile}>
+            <h4>Workload</h4>
+          </div>
         </div>
 
         <DetailsSlideout />

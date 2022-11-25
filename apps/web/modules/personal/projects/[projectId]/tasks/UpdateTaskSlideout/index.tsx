@@ -158,8 +158,6 @@ const UpdateTaskSlideout = ({ onSubmit: onSubmitProp, tasks }) => {
     }
   };
 
-  console.log("TASK", task);
-
   return (
     <>
       {task ? (

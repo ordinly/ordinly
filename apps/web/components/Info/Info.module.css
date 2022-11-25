@@ -1,8 +1,8 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: var(--medium-padding);
+  gap: var(--small-padding);
 }
 
 .text {

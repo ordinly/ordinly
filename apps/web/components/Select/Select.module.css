@@ -71,3 +71,19 @@
 .error {
   border-bottom: 1px solid var(--error-regular);
 }
+
+.option {
+  margin: 0;
+  padding: 8px 16px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+
+.option:not(.active):hover {
+  background-color: var(--background-color-light);
+}
+
+.option.active {
+  background-color: var(--primary-color-light-20);
+}

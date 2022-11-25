@@ -47,7 +47,9 @@ const PageContent = ({
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>{title}</h1>
 
-        <h3 className={styles.subtitle}>{subtitle}</h3>
+        {/**
+         * <h3 className={styles.subtitle}>{subtitle}</h3>
+         */}
       </div>
 
       <div className={styles.actions}>

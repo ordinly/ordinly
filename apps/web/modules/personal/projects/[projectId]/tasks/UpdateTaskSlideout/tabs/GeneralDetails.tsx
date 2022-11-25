@@ -75,6 +75,7 @@ const GeneralDetailsTab = () => {
         options={statuses}
         id="new-task-status-select"
         destroyOnUnregister={false}
+        clearable
       />
 
       {router?.query["companyId"] ? (

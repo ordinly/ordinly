@@ -10,7 +10,7 @@ import NotificationContext from "@contexts/NotificationContext";
 import { Form } from "@components/Form";
 import { Slideout } from "@components/Slideout";
 
-import { addTask } from "@ordinly/api-abstraction";
+import { addUserTask } from "@ordinly/api-abstraction";
 
 import GeneralDetailsStep from "./steps/GeneralDetails";
 import TodoStep from "./steps/Todo";
@@ -30,7 +30,7 @@ const AddNewTaskSlideout = ({ onSubmit: onSubmitProp, tasks }) => {
           query: { ...router.query, step: Number(router.query["step"]) + 1 },
         });
       } else {
-        await addTask({
+        await addUserTask({
           projectId: project._id,
           clientId: router.query["clientId"],
           ...values,
