@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@ordinly/api-abstraction",
+      "comment": "Add getTaskAnalytics api-abstraction",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@ordinly/api-abstraction"
+}
