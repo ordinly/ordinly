@@ -29,6 +29,7 @@ export { default as getUserProjectCompanies } from "./projects/getUserProjectCom
 export { default as addTask } from "./projects/tasks/addTask";
 export { default as updateTask } from "./projects/tasks/updateTask";
 export { default as removeTask } from "./projects/tasks/removeTask";
+export { default as getTaskAnalytics } from "./projects/tasks/getTaskAnalytics";
 export { default as getUserProjectTask } from "./projects/getUserProjectTask";
 export { default as updateCompanyPermissionsOnPersonalProject } from "./projects/updateCompanyPermissionsOnPersonalProject";
 export { default as removeCompanyFromPersonalProject } from "./projects/removeCompanyFromPersonalProject";
