@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@ordinly/api-abstraction",
+      "comment": "Update dist",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@ordinly/api-abstraction"
+}
