@@ -1,4 +1,4 @@
-export declare type SearchArgs = {
+export type SearchArgs = {
     page?: number;
     pageSize?: number;
     searchTerm?: string;

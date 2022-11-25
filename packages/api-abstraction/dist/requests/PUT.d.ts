@@ -1,5 +1,5 @@
 import type { APIResponse } from "./";
-declare type PUTProps = {
+type PUTProps = {
     endpoint: string;
     body?: {
         [key: string]: any;

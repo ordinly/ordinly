@@ -1,6 +1,6 @@
 import type { SearchArgs } from "../../search/types";
-export declare type SearchCompanyProfilesArgs = SearchArgs;
-export declare type SearchCompanyProfile = {
+export type SearchCompanyProfilesArgs = SearchArgs;
+export type SearchCompanyProfile = {
     _id: string;
     name: string;
     tagline?: string;
@@ -16,7 +16,7 @@ export declare type SearchCompanyProfile = {
         streetAddress?: string;
     };
 };
-export declare type SearchCompanyProfilesResponse = {
+export type SearchCompanyProfilesResponse = {
     companies: SearchCompanyProfile[];
 };
 export declare const getCompanyProfiles: (queryParams: SearchCompanyProfilesArgs) => Promise<SearchCompanyProfilesResponse>;

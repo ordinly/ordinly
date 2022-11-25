@@ -1,4 +1,4 @@
-export declare type DeleteUserProjectArgs = {
+export type DeleteUserProjectArgs = {
     projectId: string;
 };
 export declare const deleteUserProject: ({ projectId, }: DeleteUserProjectArgs) => Promise<({

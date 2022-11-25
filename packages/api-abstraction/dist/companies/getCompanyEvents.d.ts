@@ -1,4 +1,4 @@
-export declare type GetCompanyEventsArgs = {
+export type GetCompanyEventsArgs = {
     companyId: string;
     start?: Date;
     end?: Date;

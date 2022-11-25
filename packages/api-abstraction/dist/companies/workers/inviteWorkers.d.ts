@@ -1,4 +1,4 @@
-export declare type InviteWorkersArgs = {
+export type InviteWorkersArgs = {
     _id: string;
     invitations: string[];
 };

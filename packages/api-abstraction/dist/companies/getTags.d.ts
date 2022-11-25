@@ -1,4 +1,4 @@
-export declare type Tags = {
+export type Tags = {
     tags: string[];
 };
 export declare const getTags: () => Promise<any>;

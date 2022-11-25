@@ -1,10 +1,10 @@
-declare type GetClientQuoteArgs = {
+type GetClientQuoteArgs = {
     companyId: string;
     clientId: string;
     projectId: string;
     quoteId: string;
 };
-export declare type QuoteType = {
+export type QuoteType = {
     _id: string;
     client: string;
     quoteNumber: string;
@@ -28,7 +28,7 @@ export declare type QuoteType = {
         additionalNotes: string;
     }[];
 };
-export declare type GetQuoteResponse = {
+export type GetQuoteResponse = {
     quote: QuoteType;
 };
 export declare const getProjectQuote: ({ companyId, clientId, projectId, quoteId, }: GetClientQuoteArgs) => Promise<GetQuoteResponse>;

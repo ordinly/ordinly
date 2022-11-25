@@ -1,4 +1,4 @@
-export declare type CreateClientArgs = {
+export type CreateClientArgs = {
     companyId: string;
     description?: string;
     constacts: {

@@ -30,3 +30,4 @@ export * from "./projects/tasks/removeTask";
 export * from "./projects/tasks/updateTask";
 export * from "./projects/tasks/getUserProjectTasks";
 export * from "./projects/tasks/getUserProjectTask";
+export * from "./projects/tasks/getTaskAnalytics";

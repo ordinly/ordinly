@@ -1,5 +1,5 @@
 import type { APIResponse } from "./";
-declare type POSTProps = {
+type POSTProps = {
     endpoint: string;
     body?: {
         [key: string]: any;

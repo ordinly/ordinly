@@ -1,5 +1,5 @@
 import type { Invoice } from "./createInvoice";
-export declare type UpdateInvoiceArgs = {
+export type UpdateInvoiceArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

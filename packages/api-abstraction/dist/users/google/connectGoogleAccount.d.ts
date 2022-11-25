@@ -1,4 +1,4 @@
-export declare type ConnectGoogleAccountArgs = {
+export type ConnectGoogleAccountArgs = {
     scope: string | string[];
 };
 export declare const connectGoogleAccount: (args: ConnectGoogleAccountArgs) => Promise<import("../../requests").APIResponse & {

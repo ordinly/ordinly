@@ -1,8 +1,8 @@
-export declare type Tag = {
+export type Tag = {
     label: string;
     color: string;
 };
-export declare type GetTagsResponse = {
+export type GetTagsResponse = {
     tags: Tag[];
 };
 export declare const getAllTags: () => Promise<any>;

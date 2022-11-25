@@ -1,4 +1,4 @@
-export declare type SignUpArgs = {
+export type SignUpArgs = {
     email: string;
     name: string;
     password: string;

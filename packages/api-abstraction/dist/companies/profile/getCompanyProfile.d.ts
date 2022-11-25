@@ -1,4 +1,4 @@
-export declare type CompanyProfile = {
+export type CompanyProfile = {
     _id: string;
     name: string;
     tagline?: string;

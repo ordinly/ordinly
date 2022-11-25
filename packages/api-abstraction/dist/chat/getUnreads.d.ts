@@ -1,12 +1,12 @@
-export declare type CompanyUnread = {
+export type CompanyUnread = {
     [key: string]: {
         [key: string]: number;
     };
 };
-export declare type GetUnreadsArgs = {
+export type GetUnreadsArgs = {
     teamIds: string[];
 };
-export declare type GetUnreadsResponse = {
+export type GetUnreadsResponse = {
     unreads: {
         [key: string]: {
             [key: string]: number;

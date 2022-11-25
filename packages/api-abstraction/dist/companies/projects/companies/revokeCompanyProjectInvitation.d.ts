@@ -1,4 +1,4 @@
-export declare type RevokeInvitationToCompanyProjectArgs = {
+export type RevokeInvitationToCompanyProjectArgs = {
     invitationId: string;
     projectId: string;
     companyId: string;

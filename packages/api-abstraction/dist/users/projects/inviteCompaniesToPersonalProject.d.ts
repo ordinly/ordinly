@@ -1,4 +1,4 @@
-export declare type InviteCompaniesToPersonalProjectArgs = {
+export type InviteCompaniesToPersonalProjectArgs = {
     invitations: string[];
     projectId: string;
 };

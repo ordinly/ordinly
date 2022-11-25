@@ -1,4 +1,4 @@
-export declare type UpdateCompanyProfilePublicityArgs = {
+export type UpdateCompanyProfilePublicityArgs = {
     companyId: string;
     public: boolean;
 };

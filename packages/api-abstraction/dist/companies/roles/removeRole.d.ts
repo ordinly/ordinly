@@ -1,4 +1,4 @@
-export declare type RemoveRoleArgs = {
+export type RemoveRoleArgs = {
     companyId: string;
     roleId: string;
 };

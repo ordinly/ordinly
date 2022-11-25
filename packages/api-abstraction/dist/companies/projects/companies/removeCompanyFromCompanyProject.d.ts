@@ -1,4 +1,4 @@
-export declare type RemoveCompanyFromCompanyProjectArgs = {
+export type RemoveCompanyFromCompanyProjectArgs = {
     projectId: string;
     companyId: string;
     invitedCompanyId: string;

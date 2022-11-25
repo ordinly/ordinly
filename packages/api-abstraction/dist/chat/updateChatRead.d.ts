@@ -1,4 +1,4 @@
-export declare type UpdateChatReadArgs = {
+export type UpdateChatReadArgs = {
     chatId: string;
     companyId: string;
 };

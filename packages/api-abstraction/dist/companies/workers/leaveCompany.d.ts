@@ -1,4 +1,4 @@
-export declare type leaveCompanyArgs = {
+export type leaveCompanyArgs = {
     companyId: string;
 };
 export declare const leaveCompany: ({ companyId }: leaveCompanyArgs) => Promise<({

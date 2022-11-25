@@ -1,5 +1,5 @@
 import type { Quote } from "./createQuote";
-export declare type UpdateQuoteArgs = {
+export type UpdateQuoteArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

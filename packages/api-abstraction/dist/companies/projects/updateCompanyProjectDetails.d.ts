@@ -1,4 +1,4 @@
-export declare type UpdateCompanyProjectDetailsArgs = {
+export type UpdateCompanyProjectDetailsArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

@@ -1,8 +1,8 @@
-export declare type Country = {
+export type Country = {
     name: string;
     iso: string;
 };
-export declare type GetCountriesResponse = {
+export type GetCountriesResponse = {
     countries: Country[];
 };
 export declare const getCountries: () => Promise<any>;

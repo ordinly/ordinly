@@ -1,4 +1,4 @@
-export declare type DeleteCompanyReviewArgs = {
+export type DeleteCompanyReviewArgs = {
     companyId: string;
     reviewId: string;
 };

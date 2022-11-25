@@ -1,4 +1,4 @@
-export declare type UpdateCompanyProfilePicture = {
+export type UpdateCompanyProfilePicture = {
     companyId: string;
     file: any;
 };

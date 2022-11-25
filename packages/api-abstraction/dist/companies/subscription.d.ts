@@ -1,4 +1,4 @@
-declare type SubscriptionProps = {
+type SubscriptionProps = {
     companyId: string;
 };
 export declare const subscribe: ({ companyId }: SubscriptionProps) => Promise<import("../requests").APIResponse & {

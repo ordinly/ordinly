@@ -1,10 +1,10 @@
-declare type GetClientInvoiceArgs = {
+type GetClientInvoiceArgs = {
     companyId: string;
     clientId: string;
     projectId: string;
     invoiceId: string;
 };
-export declare type InvoiceType = {
+export type InvoiceType = {
     _id: string;
     client: string;
     invoiceNumber: string;
@@ -29,7 +29,7 @@ export declare type InvoiceType = {
         additionalNotes: string;
     }[];
 };
-export declare type GetInvoiceResponse = {
+export type GetInvoiceResponse = {
     invoice: InvoiceType;
 };
 export declare const getProjectInvoice: ({ companyId, clientId, projectId, invoiceId, }: GetClientInvoiceArgs) => Promise<GetInvoiceResponse>;

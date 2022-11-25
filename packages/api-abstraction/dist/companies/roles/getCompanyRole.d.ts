@@ -1,4 +1,4 @@
-export declare type GetCompanyRoleArgs = {
+export type GetCompanyRoleArgs = {
     companyId: string;
     roleId: string;
 };

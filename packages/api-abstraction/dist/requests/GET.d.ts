@@ -1,5 +1,5 @@
 import type { APIResponse } from "./";
-declare type GETProps = {
+type GETProps = {
     endpoint: string;
     type?: string;
     queryParams?: {

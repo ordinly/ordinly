@@ -1,4 +1,4 @@
-export declare type RespondToInvitationArgs = {
+export type RespondToInvitationArgs = {
     companyId: string;
     invitationId: string;
     accepted: boolean;

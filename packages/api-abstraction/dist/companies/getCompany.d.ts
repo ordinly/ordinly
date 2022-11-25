@@ -1,4 +1,4 @@
-declare type User = {
+type User = {
     _id: string;
     name: string;
     email: string;
@@ -7,7 +7,7 @@ declare type User = {
     status: string;
     joined: Date;
 };
-export declare type Permissions = {
+export type Permissions = {
     details: {
         add: boolean;
         view: boolean;
@@ -71,25 +71,25 @@ export declare type Permissions = {
         };
     };
 };
-export declare type Role = {
+export type Role = {
     _id: string;
     name: string;
     description?: string;
     permissions: Permissions;
 };
-export declare type Team = {
+export type Team = {
     _id: string;
     name: string;
     description?: string;
     members?: string[];
 };
-export declare type ContactType = {
+export type ContactType = {
     _id: string;
     email: string;
     phoneNumber: string;
     name: string;
 };
-export declare type Client = {
+export type Client = {
     _id: string;
     name: string;
     description?: string;
@@ -103,7 +103,7 @@ export declare type Client = {
     };
     projects: CompanyProject[];
 };
-declare type Invitation = {
+type Invitation = {
     _id: string;
     to: {
         email: string;
@@ -113,7 +113,7 @@ declare type Invitation = {
         user: User;
     };
 };
-export declare type CompanyProject = {
+export type CompanyProject = {
     _id: string;
     owner: string;
     name: string;
@@ -125,7 +125,7 @@ export declare type CompanyProject = {
     workers?: string[];
     teams?: string[];
 };
-declare type ClientInvitation = {
+type ClientInvitation = {
     _id: string;
     from: {
         company: {
@@ -143,7 +143,7 @@ declare type ClientInvitation = {
         companyId: string;
     };
 };
-export declare type Company = {
+export type Company = {
     _id: string;
     owner: string;
     name: string;

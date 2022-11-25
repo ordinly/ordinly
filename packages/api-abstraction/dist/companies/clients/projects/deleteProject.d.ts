@@ -1,4 +1,4 @@
-export declare type DeleteProjectArgs = {
+export type DeleteProjectArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

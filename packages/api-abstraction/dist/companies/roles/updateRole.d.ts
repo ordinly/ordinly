@@ -1,4 +1,4 @@
-export declare type UpdateRoleArgs = {
+export type UpdateRoleArgs = {
     companyId: string;
     roleId: string;
     permissions: any;

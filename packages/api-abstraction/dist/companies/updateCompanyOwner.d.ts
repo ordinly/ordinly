@@ -1,4 +1,4 @@
-export declare type UpdateCompanyOwnerArgs = {
+export type UpdateCompanyOwnerArgs = {
     companyId: string;
     onChangeOwner: "change-role" | "leave-company";
     newOwner: string;

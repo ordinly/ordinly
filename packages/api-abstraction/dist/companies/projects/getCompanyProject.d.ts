@@ -1,14 +1,14 @@
-declare type User = {
+type User = {
     _id: string;
     name: string;
 };
-export declare type CompanyProjectTeam = {
+export type CompanyProjectTeam = {
     _id: string;
     name: string;
     description?: string;
     members?: string[];
 };
-declare type Client = {
+type Client = {
     _id: string;
     owner: User;
     name: string;
@@ -17,7 +17,7 @@ declare type Client = {
     teams: string[];
     accepted: boolean;
 };
-export declare type CompanyProjectTask = {
+export type CompanyProjectTask = {
     _id: string;
     name: string;
     description?: string;
@@ -27,14 +27,14 @@ export declare type CompanyProjectTask = {
     startDate?: Date;
     completedDate?: Date;
 };
-export declare type CompanyProjectCompany = {
+export type CompanyProjectCompany = {
     _id: string;
     companyId: string;
     name: string;
     assignedWorkers?: User[];
     assignedTeams?: CompanyProjectTeam[];
 };
-export declare type FetchedCompanyProject = {
+export type FetchedCompanyProject = {
     _id: string;
     owner: Client;
     name: string;

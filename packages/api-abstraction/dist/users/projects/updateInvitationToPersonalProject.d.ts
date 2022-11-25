@@ -1,4 +1,4 @@
-export declare type UpdateInvitationToPersonalProjectArgs = {
+export type UpdateInvitationToPersonalProjectArgs = {
     invitationId: string;
     projectId: string;
     permissions: any;

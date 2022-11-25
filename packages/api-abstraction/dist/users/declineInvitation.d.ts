@@ -1,4 +1,4 @@
-export declare type DeclineInvitationProps = {
+export type DeclineInvitationProps = {
     invitationId: string;
 };
 export declare const declineInvitation: ({ invitationId, }: DeclineInvitationProps) => Promise<import("../requests").APIResponse & {}>;

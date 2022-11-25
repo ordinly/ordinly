@@ -1,4 +1,4 @@
-export declare type CompanyReview = {
+export type CompanyReview = {
     _id: string;
     userId: string;
     companyId: string;

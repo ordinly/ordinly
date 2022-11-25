@@ -1,8 +1,8 @@
-export declare type Status = {
+export type Status = {
     label: string;
     value: string;
 };
-export declare type GetStatusesResponse = {
+export type GetStatusesResponse = {
     statuses: Status[];
 };
 export declare const getStatuses: () => Promise<any>;

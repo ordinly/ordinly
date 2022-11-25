@@ -1,5 +1,5 @@
 import type { SearchArgs } from "../../../search/types";
-export declare type GetCompanyProjectCompaniesArgs = SearchArgs & {
+export type GetCompanyProjectCompaniesArgs = SearchArgs & {
     projectId: string;
     companyId: string;
 };

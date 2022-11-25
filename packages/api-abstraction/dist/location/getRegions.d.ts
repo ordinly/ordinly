@@ -1,7 +1,7 @@
-export declare type Region = {
+export type Region = {
     name: string;
 };
-export declare type GetRegionsResponse = {
+export type GetRegionsResponse = {
     regions: Region[];
 };
 export declare const getRegions: ({ countryId }: {

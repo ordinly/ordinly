@@ -1,4 +1,4 @@
-export declare type AddFileToTask = {
+export type AddFileToTask = {
     companyId: string;
     clientId: string;
     projectId: string;

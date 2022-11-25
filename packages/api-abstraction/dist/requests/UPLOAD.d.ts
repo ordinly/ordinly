@@ -1,5 +1,5 @@
 import type { APIResponse } from "./";
-declare type UPLOADProps = {
+type UPLOADProps = {
     action?: "POST" | "PUT";
     endpoint: string;
     body?: {

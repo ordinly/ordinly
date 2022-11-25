@@ -1,4 +1,4 @@
-export declare type AddCommentArgs = {
+export type AddCommentArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

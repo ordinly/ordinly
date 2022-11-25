@@ -1,4 +1,4 @@
-export declare type Quote = {
+export type Quote = {
     isEstimate: boolean;
     client: string;
     clientId: string;
@@ -23,7 +23,7 @@ export declare type Quote = {
         additionalNotes: string;
     }[];
 };
-export declare type CreateQuoteArgs = {
+export type CreateQuoteArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

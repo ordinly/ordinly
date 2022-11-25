@@ -1,7 +1,7 @@
-export declare type City = {
+export type City = {
     name: string;
 };
-export declare type GetCitiesResponse = {
+export type GetCitiesResponse = {
     regions: City[];
 };
 export declare const getCities: ({ countryId, regionId, }: {

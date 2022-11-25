@@ -1,4 +1,4 @@
-export declare type CreateCompanyProjectArgs = {
+export type CreateCompanyProjectArgs = {
     companyId: string;
     name: string;
     description: string;

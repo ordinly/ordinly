@@ -1,4 +1,4 @@
-export declare type UpdateCompanyPhoneNumbersArgs = {
+export type UpdateCompanyPhoneNumbersArgs = {
     companyId: string;
     phoneNumbers: string[];
 };

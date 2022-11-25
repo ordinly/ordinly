@@ -1,4 +1,4 @@
-export declare type ChatType = {
+export type ChatType = {
     messages: {
         from: string;
         repliesTo?: string;
@@ -8,11 +8,11 @@ export declare type ChatType = {
         message: string;
     }[];
 };
-export declare type GetTeamChatArgs = {
+export type GetTeamChatArgs = {
     companyId: string;
     teamId: string;
 };
-export declare type GetTeamChatResponse = {
+export type GetTeamChatResponse = {
     chat: ChatType;
 };
 export declare const getTeamChat: ({ companyId, teamId }: GetTeamChatArgs) => Promise<any>;

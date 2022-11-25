@@ -46,3 +46,4 @@ __exportStar(require("./projects/tasks/removeTask"), exports);
 __exportStar(require("./projects/tasks/updateTask"), exports);
 __exportStar(require("./projects/tasks/getUserProjectTasks"), exports);
 __exportStar(require("./projects/tasks/getUserProjectTask"), exports);
+__exportStar(require("./projects/tasks/getTaskAnalytics"), exports);

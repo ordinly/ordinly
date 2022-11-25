@@ -1,9 +1,9 @@
-export declare type APIResponseSuccess = {
+export type APIResponseSuccess = {
     message?: string;
 };
-export declare type APIResponseError = {
+export type APIResponseError = {
     error?: string;
 };
-export declare type APIResponse = {
+export type APIResponse = {
     code?: number;
 } & (APIResponseSuccess | APIResponseError);

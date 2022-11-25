@@ -1,4 +1,4 @@
-export declare type GetUserProjectTaskArgs = {
+export type GetUserProjectTaskArgs = {
     projectId: string;
     taskId: string;
 };

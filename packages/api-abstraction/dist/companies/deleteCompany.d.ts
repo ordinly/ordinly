@@ -1,4 +1,4 @@
-export declare type DeleteCompanyArgs = {
+export type DeleteCompanyArgs = {
     companyId: string;
 };
 export declare const deleteCompany: ({ companyId }: DeleteCompanyArgs) => Promise<({

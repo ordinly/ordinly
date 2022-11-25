@@ -1,4 +1,4 @@
-export declare type Invoice = {
+export type Invoice = {
     client: string;
     clientId: string;
     invoiceNumber: string;
@@ -23,7 +23,7 @@ export declare type Invoice = {
         additionalNotes: string;
     }[];
 };
-export declare type CreateInvoiceArgs = {
+export type CreateInvoiceArgs = {
     companyId: string;
     clientId: string;
     projectId: string;

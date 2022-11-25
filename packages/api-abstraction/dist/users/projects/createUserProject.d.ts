@@ -1,4 +1,4 @@
-export declare type CreateUserProjectArgs = {
+export type CreateUserProjectArgs = {
     name: string;
     description: string;
 };

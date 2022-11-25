@@ -1,4 +1,4 @@
-export declare type UpdateCompanyContactInfoArgs = {
+export type UpdateCompanyContactInfoArgs = {
     companyId: string;
     emailAddresses: string[];
 };

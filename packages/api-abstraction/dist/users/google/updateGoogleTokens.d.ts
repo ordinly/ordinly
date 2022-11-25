@@ -1,4 +1,4 @@
-export declare type UpdateGoogleTokensArgs = {
+export type UpdateGoogleTokensArgs = {
     scope: string | string[];
     code: string;
 };

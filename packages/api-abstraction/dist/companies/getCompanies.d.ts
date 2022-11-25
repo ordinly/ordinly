@@ -1,4 +1,4 @@
-export declare type WorkCompany = {
+export type WorkCompany = {
     _id: string;
     owner: string;
     name: string;
@@ -28,7 +28,7 @@ export declare type WorkCompany = {
     }[];
     active: boolean;
 };
-export declare type GetCompaniesResponse = {
+export type GetCompaniesResponse = {
     companies: WorkCompany[];
 };
 export declare const getCompanies: () => Promise<any>;

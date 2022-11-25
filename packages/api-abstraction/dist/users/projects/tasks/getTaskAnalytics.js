@@ -36,18 +36,18 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteInvoice = void 0;
-var requests_1 = require("../../../../requests");
-var deleteInvoice = function (_a) {
-    var companyId = _a.companyId, clientId = _a.clientId, projectId = _a.projectId, invoiceId = _a.invoiceId;
+exports.getUserProjectTaskAnalytics = void 0;
+var requests_1 = require("../../../requests");
+var getUserProjectTaskAnalytics = function (_a) {
+    var projectId = _a.projectId;
     return __awaiter(void 0, void 0, void 0, function () {
         var response, caught_1, _b, status_1, _c, error;
         return __generator(this, function (_d) {
             switch (_d.label) {
                 case 0:
                     _d.trys.push([0, 2, , 3]);
-                    return [4 /*yield*/, (0, requests_1.DELETE)({
-                            endpoint: "/api/company/".concat(companyId, "/clients/").concat(clientId, "/projects/").concat(projectId, "/invoice/").concat(invoiceId),
+                    return [4 /*yield*/, (0, requests_1.GET)({
+                            endpoint: "/api/user/projects/".concat(projectId, "/tasks/analytics"),
                         })];
                 case 1:
                     response = _d.sent();
@@ -60,11 +60,11 @@ var deleteInvoice = function (_a) {
                     return [3 /*break*/, 3];
                 case 2:
                     caught_1 = _d.sent();
-                    _b = caught_1.status, status_1 = _b === void 0 ? 500 : _b, _c = caught_1.error, error = _c === void 0 ? "There was an error deleting this invoice" : _c;
+                    _b = caught_1.status, status_1 = _b === void 0 ? 500 : _b, _c = caught_1.error, error = _c === void 0 ? "There was an error fetching your task analytics" : _c;
                     return [2 /*return*/, { status: status_1, error: error }];
                 case 3: return [2 /*return*/];
             }
         });
     });
 };
-exports.deleteInvoice = deleteInvoice;
+exports.getUserProjectTaskAnalytics = getUserProjectTaskAnalytics;
