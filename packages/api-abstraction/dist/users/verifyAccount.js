@@ -47,7 +47,7 @@ var verifyAccount = function (_a) {
                 case 0:
                     _d.trys.push([0, 2, , 3]);
                     return [4 /*yield*/, (0, requests_1.GET)({
-                            endpoint: "/api/user/verify-account".concat(code),
+                            endpoint: "/api/user/verify-account?code=".concat(code),
                         })];
                 case 1:
                     response = _d.sent();
